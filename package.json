@@ -1,0 +1,49 @@
+{
+  "name": "ez-vcard",
+  "version": "0.0.1",
+  "description": "A vCard parser library for NodeJS with TypeScript support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vCard",
+    "vcf",
+    "NodeJS",
+    "TypeScript",
+    "ez-vcard"
+  ],
+  "author": "Maxim Mazurok <maxim@mazurok.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/java": "^0.9.0",
+    "@types/lodash": "^4.14.159",
+    "@types/node": "^14.0.27",
+    "gts": "^2.0.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "java": "^0.12.1",
+    "lodash": "^4.17.19",
+    "node-java-maven": "^0.1.2"
+  },
+  "java": {
+    "repositories": [
+      {
+        "id": "maven-central",
+        "url": "http://repo1.maven.org/maven2/"
+      }
+    ],
+    "dependencies": [
+      {
+        "groupId": "com.googlecode.ez-vcard",
+        "artifactId": "ez-vcard",
+        "version": "0.10.6"
+      }
+    ]
+  },
+  "engines": {
+    "node": "12.18.3",
+    "npm": "6.14.6"
+  }
+}

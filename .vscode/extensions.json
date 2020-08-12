@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "cstrachan.vcard", // vcard.vcf
+    "streetsidesoftware.code-spell-checker", // spell checker
+    "yzhang.markdown-all-in-one", // markdown
+    "eg2.vscode-npm-script", // npm
+    "dbaeumer.vscode-eslint", // eslint
+    "esbenp.prettier-vscode", // prettier
+    "medo64.render-crlf", // show EOL (useful for Windows)
+    "editorconfig.editorconfig" // .editorconfig support
+  ]
+}
