@@ -1,0 +1,12 @@
+{
+  "extends": "../node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "rootDir": "..",
+    "outDir": "dist",
+    "lib": ["es6"],
+    "listEmittedFiles": true,
+    "typeRoots": ["../node_modules/@types", "../types"]
+  },
+  "include": ["./**/*.ts"]
+}

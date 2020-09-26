@@ -19,6 +19,14 @@
 //   ezvcard.property.Uid
 //   ezvcard.VCard
 //   ezvcard.VCardVersion
+//   ezvcard.io.chain.ChainingTextWriter
+//   java.util.List
+//   java.lang.reflect.Field
+//   java.util.TimeZone
+//   java.util.GregorianCalendar
+//   java.util.Calendar
+//   java.lang.Integer
+//   java.io.File
 // packages:
 //   ezvcard.*
 
@@ -98,8 +106,15 @@ export module Java {
       VCard: 'ezvcard.VCard',
       VCardDataType: 'ezvcard.VCardDataType',
       VCardVersion: 'ezvcard.VCardVersion',
+      File: 'java.io.File',
+      Integer: 'java.lang.Integer',
       Object: 'java.lang.Object',
+      Field: 'java.lang.reflect.Field',
       String: 'java.lang.String',
+      Calendar: 'java.util.Calendar',
+      GregorianCalendar: 'java.util.GregorianCalendar',
+      List: 'java.util.List',
+      TimeZone: 'java.util.TimeZone',
     };
     return shortToLongMap[className];
   }
@@ -159,12 +174,29 @@ export module Java {
   export function importClass(
     className: 'VCardVersion'
   ): Java.ezvcard.VCardVersion.Static;
+  export function importClass(className: 'File'): Java.java.io.File.Static;
+  export function importClass(
+    className: 'Integer'
+  ): Java.java.lang.Integer.Static;
   export function importClass(
     className: 'Object'
   ): Java.java.lang.Object.Static;
   export function importClass(
+    className: 'Field'
+  ): Java.java.lang.reflect.Field.Static;
+  export function importClass(
     className: 'String'
   ): Java.java.lang.String.Static;
+  export function importClass(
+    className: 'Calendar'
+  ): Java.java.util.Calendar.Static;
+  export function importClass(
+    className: 'GregorianCalendar'
+  ): Java.java.util.GregorianCalendar.Static;
+  export function importClass(className: 'List'): Java.java.util.List.Static;
+  export function importClass(
+    className: 'TimeZone'
+  ): Java.java.util.TimeZone.Static;
   export function importClass(
     className: 'ezvcard.Ezvcard'
   ): Java.ezvcard.Ezvcard.Static;
@@ -223,11 +255,32 @@ export module Java {
     className: 'ezvcard.VCardVersion'
   ): Java.ezvcard.VCardVersion.Static;
   export function importClass(
+    className: 'java.io.File'
+  ): Java.java.io.File.Static;
+  export function importClass(
+    className: 'java.lang.Integer'
+  ): Java.java.lang.Integer.Static;
+  export function importClass(
     className: 'java.lang.Object'
   ): Java.java.lang.Object.Static;
   export function importClass(
+    className: 'java.lang.reflect.Field'
+  ): Java.java.lang.reflect.Field.Static;
+  export function importClass(
     className: 'java.lang.String'
   ): Java.java.lang.String.Static;
+  export function importClass(
+    className: 'java.util.Calendar'
+  ): Java.java.util.Calendar.Static;
+  export function importClass(
+    className: 'java.util.GregorianCalendar'
+  ): Java.java.util.GregorianCalendar.Static;
+  export function importClass(
+    className: 'java.util.List'
+  ): Java.java.util.List.Static;
+  export function importClass(
+    className: 'java.util.TimeZone'
+  ): Java.java.util.TimeZone.Static;
   export function importClass(className: string): any;
   export function importClass(className: string): any {
     var fullName: string = fullyQualifiedName(className) || className;
@@ -310,14 +363,39 @@ export module Java {
     obj: any,
     className: 'VCardVersion'
   ): Java.ezvcard.VCardVersion;
+  export function asInstanceOf(obj: any, className: 'File'): Java.java.io.File;
+  export function asInstanceOf(
+    obj: any,
+    className: 'Integer'
+  ): Java.java.lang.Integer;
   export function asInstanceOf(
     obj: any,
     className: 'Object'
   ): Java.java.lang.Object;
   export function asInstanceOf(
     obj: any,
+    className: 'Field'
+  ): Java.java.lang.reflect.Field;
+  export function asInstanceOf(
+    obj: any,
     className: 'String'
   ): Java.java.lang.String;
+  export function asInstanceOf(
+    obj: any,
+    className: 'Calendar'
+  ): Java.java.util.Calendar;
+  export function asInstanceOf(
+    obj: any,
+    className: 'GregorianCalendar'
+  ): Java.java.util.GregorianCalendar;
+  export function asInstanceOf(
+    obj: any,
+    className: 'List'
+  ): Java.java.util.List;
+  export function asInstanceOf(
+    obj: any,
+    className: 'TimeZone'
+  ): Java.java.util.TimeZone;
   export function asInstanceOf(
     obj: any,
     className: 'ezvcard.Ezvcard'
@@ -396,12 +474,40 @@ export module Java {
   ): Java.ezvcard.VCardVersion;
   export function asInstanceOf(
     obj: any,
+    className: 'java.io.File'
+  ): Java.java.io.File;
+  export function asInstanceOf(
+    obj: any,
+    className: 'java.lang.Integer'
+  ): Java.java.lang.Integer;
+  export function asInstanceOf(
+    obj: any,
     className: 'java.lang.Object'
   ): Java.java.lang.Object;
   export function asInstanceOf(
     obj: any,
+    className: 'java.lang.reflect.Field'
+  ): Java.java.lang.reflect.Field;
+  export function asInstanceOf(
+    obj: any,
     className: 'java.lang.String'
   ): Java.java.lang.String;
+  export function asInstanceOf(
+    obj: any,
+    className: 'java.util.Calendar'
+  ): Java.java.util.Calendar;
+  export function asInstanceOf(
+    obj: any,
+    className: 'java.util.GregorianCalendar'
+  ): Java.java.util.GregorianCalendar;
+  export function asInstanceOf(
+    obj: any,
+    className: 'java.util.List'
+  ): Java.java.util.List;
+  export function asInstanceOf(
+    obj: any,
+    className: 'java.util.TimeZone'
+  ): Java.java.util.TimeZone;
   export function asInstanceOf(obj: any, className: string): any;
   export function asInstanceOf(obj: any, className: string): any {
     var fullName: string = fullyQualifiedName(className) || className;
@@ -480,7 +586,7 @@ export module Java {
   ): void;
   export function newInstanceA(
     className: 'Photo',
-    arg0: object_t,
+    arg0: Java.File,
     arg1: Java.ImageType,
     cb: Callback<Java.Photo>
   ): void;
@@ -532,7 +638,7 @@ export module Java {
   ): void;
   export function newInstanceA(
     className: 'Timezone',
-    arg0: object_t,
+    arg0: Java.TimeZone,
     cb: Callback<Java.Timezone>
   ): void;
   export function newInstanceA(
@@ -552,7 +658,7 @@ export module Java {
   ): void;
   export function newInstanceA(
     className: 'ValidationWarning',
-    arg0: object_t,
+    arg0: integer_t,
     arg1: object_array_t,
     cb: Callback<Java.ValidationWarning>
   ): void;
@@ -580,52 +686,84 @@ export module Java {
     cb: Callback<Java.VCard>
   ): void;
   export function newInstanceA(
+    className: 'File',
+    arg0: string_t,
+    arg1: string_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'File',
+    arg0: Java.File,
+    arg1: string_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'File',
+    arg0: string_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'File',
+    arg0: object_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'Integer',
+    arg0: string_t,
+    cb: Callback<number>
+  ): void;
+  export function newInstanceA(
+    className: 'Integer',
+    arg0: integer_t,
+    cb: Callback<number>
+  ): void;
+  export function newInstanceA(
     className: 'Object',
     cb: Callback<object_t>
   ): void;
   export function newInstanceA(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: object_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: string_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    arg3: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    cb: Callback<string>
+  ): void;
+  export function newInstanceA(
+    className: 'String',
+    arg0: array_t<integer_t>,
+    arg1: integer_t,
+    arg2: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    cb: Callback<string>
-  ): void;
-  export function newInstanceA(
-    className: 'String',
-    arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
@@ -643,7 +781,7 @@ export module Java {
   export function newInstanceA(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
+    arg1: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
@@ -672,6 +810,56 @@ export module Java {
     cb: Callback<string>
   ): void;
   export function newInstanceA(className: 'String', cb: Callback<string>): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    arg5: integer_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    arg0: Java.TimeZone,
+    arg1: object_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    arg0: Java.TimeZone,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    arg0: object_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'GregorianCalendar',
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'TimeZone',
+    cb: Callback<Java.TimeZone>
+  ): void;
   export function newInstanceA(
     className: 'ezvcard.io.chain.ChainingTextWriter',
     arg0: object_t,
@@ -726,7 +914,7 @@ export module Java {
   ): void;
   export function newInstanceA(
     className: 'ezvcard.property.Photo',
-    arg0: object_t,
+    arg0: Java.File,
     arg1: Java.ImageType,
     cb: Callback<Java.Photo>
   ): void;
@@ -778,7 +966,7 @@ export module Java {
   ): void;
   export function newInstanceA(
     className: 'ezvcard.property.Timezone',
-    arg0: object_t,
+    arg0: Java.TimeZone,
     cb: Callback<Java.Timezone>
   ): void;
   export function newInstanceA(
@@ -798,7 +986,7 @@ export module Java {
   ): void;
   export function newInstanceA(
     className: 'ezvcard.ValidationWarning',
-    arg0: object_t,
+    arg0: integer_t,
     arg1: object_array_t,
     cb: Callback<Java.ValidationWarning>
   ): void;
@@ -826,52 +1014,84 @@ export module Java {
     cb: Callback<Java.VCard>
   ): void;
   export function newInstanceA(
+    className: 'java.io.File',
+    arg0: string_t,
+    arg1: string_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'java.io.File',
+    arg0: Java.File,
+    arg1: string_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'java.io.File',
+    arg0: string_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'java.io.File',
+    arg0: object_t,
+    cb: Callback<Java.File>
+  ): void;
+  export function newInstanceA(
+    className: 'java.lang.Integer',
+    arg0: string_t,
+    cb: Callback<number>
+  ): void;
+  export function newInstanceA(
+    className: 'java.lang.Integer',
+    arg0: integer_t,
+    cb: Callback<number>
+  ): void;
+  export function newInstanceA(
     className: 'java.lang.Object',
     cb: Callback<object_t>
   ): void;
   export function newInstanceA(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: object_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: string_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    arg3: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    cb: Callback<string>
+  ): void;
+  export function newInstanceA(
+    className: 'java.lang.String',
+    arg0: array_t<integer_t>,
+    arg1: integer_t,
+    arg2: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    cb: Callback<string>
-  ): void;
-  export function newInstanceA(
-    className: 'java.lang.String',
-    arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
@@ -889,7 +1109,7 @@ export module Java {
   export function newInstanceA(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
+    arg1: integer_t,
     cb: Callback<string>
   ): void;
   export function newInstanceA(
@@ -920,6 +1140,56 @@ export module Java {
   export function newInstanceA(
     className: 'java.lang.String',
     cb: Callback<string>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    arg5: integer_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    arg0: Java.TimeZone,
+    arg1: object_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    arg0: Java.TimeZone,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    arg0: object_t,
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.GregorianCalendar',
+    cb: Callback<Java.GregorianCalendar>
+  ): void;
+  export function newInstanceA(
+    className: 'java.util.TimeZone',
+    cb: Callback<Java.TimeZone>
   ): void;
   export function newInstanceA(className: string, ...args: any[]): void;
   export function newInstanceA(className: string, ...args: any[]): any {
@@ -969,7 +1239,7 @@ export module Java {
   ): Java.Photo;
   export function newInstance(
     className: 'Photo',
-    arg0: object_t,
+    arg0: Java.File,
     arg1: Java.ImageType
   ): Java.Photo;
   export function newInstance(
@@ -1006,7 +1276,7 @@ export module Java {
   ): Java.Timezone;
   export function newInstance(
     className: 'Timezone',
-    arg0: object_t
+    arg0: Java.TimeZone
   ): Java.Timezone;
   export function newInstance(
     className: 'Timezone',
@@ -1016,7 +1286,7 @@ export module Java {
   export function newInstance(className: 'Uid', arg0: string_t): Java.Uid;
   export function newInstance(
     className: 'ValidationWarning',
-    arg0: object_t,
+    arg0: integer_t,
     ...arg1: object_t[]
   ): Java.ValidationWarning;
   export function newInstance(
@@ -1032,45 +1302,59 @@ export module Java {
   ): Java.VCard;
   export function newInstance(className: 'VCard', arg0: Java.VCard): Java.VCard;
   export function newInstance(className: 'VCard'): Java.VCard;
+  export function newInstance(
+    className: 'File',
+    arg0: string_t,
+    arg1: string_t
+  ): Java.File;
+  export function newInstance(
+    className: 'File',
+    arg0: Java.File,
+    arg1: string_t
+  ): Java.File;
+  export function newInstance(className: 'File', arg0: string_t): Java.File;
+  export function newInstance(className: 'File', arg0: object_t): Java.File;
+  export function newInstance(className: 'Integer', arg0: string_t): number;
+  export function newInstance(className: 'Integer', arg0: integer_t): number;
   export function newInstance(className: 'Object'): object_t;
   export function newInstance(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: object_t
   ): string;
   export function newInstance(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: string_t
   ): string;
   export function newInstance(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    arg3: object_t
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t
+  ): string;
+  export function newInstance(
+    className: 'String',
+    arg0: array_t<integer_t>,
+    arg1: integer_t,
+    arg2: integer_t
   ): string;
   export function newInstance(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): string;
   export function newInstance(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
-  ): string;
-  export function newInstance(
-    className: 'String',
-    arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): string;
   export function newInstance(
     className: 'String',
@@ -1085,7 +1369,7 @@ export module Java {
   export function newInstance(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t
+    arg1: integer_t
   ): string;
   export function newInstance(className: 'String', arg0: object_t): string;
   export function newInstance(className: 'String', arg0: object_t): string;
@@ -1099,6 +1383,46 @@ export module Java {
     arg0: object_array_t
   ): string;
   export function newInstance(className: 'String'): string;
+  export function newInstance(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    arg5: integer_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'GregorianCalendar',
+    arg0: Java.TimeZone,
+    arg1: object_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'GregorianCalendar',
+    arg0: Java.TimeZone
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'GregorianCalendar',
+    arg0: object_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'GregorianCalendar'
+  ): Java.GregorianCalendar;
+  export function newInstance(className: 'TimeZone'): Java.TimeZone;
   export function newInstance(
     className: 'ezvcard.io.chain.ChainingTextWriter',
     arg0: object_t
@@ -1143,7 +1467,7 @@ export module Java {
   ): Java.Photo;
   export function newInstance(
     className: 'ezvcard.property.Photo',
-    arg0: object_t,
+    arg0: Java.File,
     arg1: Java.ImageType
   ): Java.Photo;
   export function newInstance(
@@ -1185,7 +1509,7 @@ export module Java {
   ): Java.Timezone;
   export function newInstance(
     className: 'ezvcard.property.Timezone',
-    arg0: object_t
+    arg0: Java.TimeZone
   ): Java.Timezone;
   export function newInstance(
     className: 'ezvcard.property.Timezone',
@@ -1201,7 +1525,7 @@ export module Java {
   ): Java.Uid;
   export function newInstance(
     className: 'ezvcard.ValidationWarning',
-    arg0: object_t,
+    arg0: integer_t,
     ...arg1: object_t[]
   ): Java.ValidationWarning;
   export function newInstance(
@@ -1220,45 +1544,71 @@ export module Java {
     arg0: Java.VCard
   ): Java.VCard;
   export function newInstance(className: 'ezvcard.VCard'): Java.VCard;
+  export function newInstance(
+    className: 'java.io.File',
+    arg0: string_t,
+    arg1: string_t
+  ): Java.File;
+  export function newInstance(
+    className: 'java.io.File',
+    arg0: Java.File,
+    arg1: string_t
+  ): Java.File;
+  export function newInstance(
+    className: 'java.io.File',
+    arg0: string_t
+  ): Java.File;
+  export function newInstance(
+    className: 'java.io.File',
+    arg0: object_t
+  ): Java.File;
+  export function newInstance(
+    className: 'java.lang.Integer',
+    arg0: string_t
+  ): number;
+  export function newInstance(
+    className: 'java.lang.Integer',
+    arg0: integer_t
+  ): number;
   export function newInstance(className: 'java.lang.Object'): object_t;
   export function newInstance(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: object_t
   ): string;
   export function newInstance(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: string_t
   ): string;
   export function newInstance(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    arg3: object_t
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t
+  ): string;
+  export function newInstance(
+    className: 'java.lang.String',
+    arg0: array_t<integer_t>,
+    arg1: integer_t,
+    arg2: integer_t
   ): string;
   export function newInstance(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): string;
   export function newInstance(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
-  ): string;
-  export function newInstance(
-    className: 'java.lang.String',
-    arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): string;
   export function newInstance(
     className: 'java.lang.String',
@@ -1273,7 +1623,7 @@ export module Java {
   export function newInstance(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t
+    arg1: integer_t
   ): string;
   export function newInstance(
     className: 'java.lang.String',
@@ -1296,6 +1646,46 @@ export module Java {
     arg0: object_array_t
   ): string;
   export function newInstance(className: 'java.lang.String'): string;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    arg5: integer_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar',
+    arg0: Java.TimeZone,
+    arg1: object_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar',
+    arg0: Java.TimeZone
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar',
+    arg0: object_t
+  ): Java.GregorianCalendar;
+  export function newInstance(
+    className: 'java.util.GregorianCalendar'
+  ): Java.GregorianCalendar;
+  export function newInstance(className: 'java.util.TimeZone'): Java.TimeZone;
   export function newInstance(className: string, ...args: any[]): any;
   export function newInstance(className: string, ...args: any[]): any {
     var fullName: string = fullyQualifiedName(className) || className;
@@ -1344,7 +1734,7 @@ export module Java {
   ): Promise<Java.Photo>;
   export function newInstanceP(
     className: 'Photo',
-    arg0: object_t,
+    arg0: Java.File,
     arg1: Java.ImageType
   ): Promise<Java.Photo>;
   export function newInstanceP(
@@ -1386,7 +1776,7 @@ export module Java {
   ): Promise<Java.Timezone>;
   export function newInstanceP(
     className: 'Timezone',
-    arg0: object_t
+    arg0: Java.TimeZone
   ): Promise<Java.Timezone>;
   export function newInstanceP(
     className: 'Timezone',
@@ -1402,7 +1792,7 @@ export module Java {
   ): Promise<Java.Uid>;
   export function newInstanceP(
     className: 'ValidationWarning',
-    arg0: object_t,
+    arg0: integer_t,
     ...arg1: object_t[]
   ): Promise<Java.ValidationWarning>;
   export function newInstanceP(
@@ -1421,45 +1811,71 @@ export module Java {
     arg0: Java.VCard
   ): Promise<Java.VCard>;
   export function newInstanceP(className: 'VCard'): Promise<Java.VCard>;
+  export function newInstanceP(
+    className: 'File',
+    arg0: string_t,
+    arg1: string_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'File',
+    arg0: Java.File,
+    arg1: string_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'File',
+    arg0: string_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'File',
+    arg0: object_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'Integer',
+    arg0: string_t
+  ): Promise<number>;
+  export function newInstanceP(
+    className: 'Integer',
+    arg0: integer_t
+  ): Promise<number>;
   export function newInstanceP(className: 'Object'): Promise<object_t>;
   export function newInstanceP(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: object_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: string_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    arg3: object_t
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t
+  ): Promise<string>;
+  export function newInstanceP(
+    className: 'String',
+    arg0: array_t<integer_t>,
+    arg1: integer_t,
+    arg2: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
-  ): Promise<string>;
-  export function newInstanceP(
-    className: 'String',
-    arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'String',
@@ -1474,7 +1890,7 @@ export module Java {
   export function newInstanceP(
     className: 'String',
     arg0: object_array_t,
-    arg1: object_t
+    arg1: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'String',
@@ -1497,6 +1913,46 @@ export module Java {
     arg0: object_array_t
   ): Promise<string>;
   export function newInstanceP(className: 'String'): Promise<string>;
+  export function newInstanceP(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    arg5: integer_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'GregorianCalendar',
+    arg0: Java.TimeZone,
+    arg1: object_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'GregorianCalendar',
+    arg0: Java.TimeZone
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'GregorianCalendar',
+    arg0: object_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'GregorianCalendar'
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(className: 'TimeZone'): Promise<Java.TimeZone>;
   export function newInstanceP(
     className: 'ezvcard.io.chain.ChainingTextWriter',
     arg0: object_t
@@ -1541,7 +1997,7 @@ export module Java {
   ): Promise<Java.Photo>;
   export function newInstanceP(
     className: 'ezvcard.property.Photo',
-    arg0: object_t,
+    arg0: Java.File,
     arg1: Java.ImageType
   ): Promise<Java.Photo>;
   export function newInstanceP(
@@ -1583,7 +2039,7 @@ export module Java {
   ): Promise<Java.Timezone>;
   export function newInstanceP(
     className: 'ezvcard.property.Timezone',
-    arg0: object_t
+    arg0: Java.TimeZone
   ): Promise<Java.Timezone>;
   export function newInstanceP(
     className: 'ezvcard.property.Timezone',
@@ -1599,7 +2055,7 @@ export module Java {
   ): Promise<Java.Uid>;
   export function newInstanceP(
     className: 'ezvcard.ValidationWarning',
-    arg0: object_t,
+    arg0: integer_t,
     ...arg1: object_t[]
   ): Promise<Java.ValidationWarning>;
   export function newInstanceP(
@@ -1619,46 +2075,72 @@ export module Java {
   ): Promise<Java.VCard>;
   export function newInstanceP(className: 'ezvcard.VCard'): Promise<Java.VCard>;
   export function newInstanceP(
+    className: 'java.io.File',
+    arg0: string_t,
+    arg1: string_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'java.io.File',
+    arg0: Java.File,
+    arg1: string_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'java.io.File',
+    arg0: string_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'java.io.File',
+    arg0: object_t
+  ): Promise<Java.File>;
+  export function newInstanceP(
+    className: 'java.lang.Integer',
+    arg0: string_t
+  ): Promise<number>;
+  export function newInstanceP(
+    className: 'java.lang.Integer',
+    arg0: integer_t
+  ): Promise<number>;
+  export function newInstanceP(
     className: 'java.lang.Object'
   ): Promise<object_t>;
   export function newInstanceP(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: object_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
+    arg1: integer_t,
+    arg2: integer_t,
     arg3: string_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t,
-    arg3: object_t
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t
+  ): Promise<string>;
+  export function newInstanceP(
+    className: 'java.lang.String',
+    arg0: array_t<integer_t>,
+    arg1: integer_t,
+    arg2: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
-  ): Promise<string>;
-  export function newInstanceP(
-    className: 'java.lang.String',
-    arg0: object_array_t,
-    arg1: object_t,
-    arg2: object_t
+    arg1: integer_t,
+    arg2: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'java.lang.String',
@@ -1673,7 +2155,7 @@ export module Java {
   export function newInstanceP(
     className: 'java.lang.String',
     arg0: object_array_t,
-    arg1: object_t
+    arg1: integer_t
   ): Promise<string>;
   export function newInstanceP(
     className: 'java.lang.String',
@@ -1696,6 +2178,48 @@ export module Java {
     arg0: object_array_t
   ): Promise<string>;
   export function newInstanceP(className: 'java.lang.String'): Promise<string>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t,
+    arg5: integer_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t,
+    arg3: integer_t,
+    arg4: integer_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar',
+    arg0: integer_t,
+    arg1: integer_t,
+    arg2: integer_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar',
+    arg0: Java.TimeZone,
+    arg1: object_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar',
+    arg0: Java.TimeZone
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar',
+    arg0: object_t
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.GregorianCalendar'
+  ): Promise<Java.GregorianCalendar>;
+  export function newInstanceP(
+    className: 'java.util.TimeZone'
+  ): Promise<Java.TimeZone>;
   export function newInstanceP(className: string, ...args: any[]): Promise<any>;
   export function newInstanceP(
     className: string,
@@ -1782,13 +2306,41 @@ export module Java {
     arg: Java.VCardVersion[]
   ): array_t<ezvcard.VCardVersion>;
   export function newArray(
+    className: 'File',
+    arg: Java.File[]
+  ): array_t<java.io.File>;
+  export function newArray(
+    className: 'Integer',
+    arg: integer_t[]
+  ): array_t<java.lang.Integer>;
+  export function newArray(
     className: 'Object',
     arg: object_t[]
   ): array_t<java.lang.Object>;
   export function newArray(
+    className: 'Field',
+    arg: Java.Field[]
+  ): array_t<java.lang.reflect.Field>;
+  export function newArray(
     className: 'String',
     arg: string_t[]
   ): array_t<java.lang.String>;
+  export function newArray(
+    className: 'Calendar',
+    arg: Java.Calendar[]
+  ): array_t<java.util.Calendar>;
+  export function newArray(
+    className: 'GregorianCalendar',
+    arg: Java.GregorianCalendar[]
+  ): array_t<java.util.GregorianCalendar>;
+  export function newArray(
+    className: 'List',
+    arg: Java.List[]
+  ): array_t<java.util.List>;
+  export function newArray(
+    className: 'TimeZone',
+    arg: Java.TimeZone[]
+  ): array_t<java.util.TimeZone>;
   export function newArray(
     className: 'ezvcard.Ezvcard',
     arg: Java.Ezvcard[]
@@ -1866,13 +2418,41 @@ export module Java {
     arg: Java.VCardVersion[]
   ): array_t<ezvcard.VCardVersion>;
   export function newArray(
+    className: 'java.io.File',
+    arg: Java.File[]
+  ): array_t<java.io.File>;
+  export function newArray(
+    className: 'java.lang.Integer',
+    arg: integer_t[]
+  ): array_t<java.lang.Integer>;
+  export function newArray(
     className: 'java.lang.Object',
     arg: object_t[]
   ): array_t<java.lang.Object>;
   export function newArray(
+    className: 'java.lang.reflect.Field',
+    arg: Java.Field[]
+  ): array_t<java.lang.reflect.Field>;
+  export function newArray(
     className: 'java.lang.String',
     arg: string_t[]
   ): array_t<java.lang.String>;
+  export function newArray(
+    className: 'java.util.Calendar',
+    arg: Java.Calendar[]
+  ): array_t<java.util.Calendar>;
+  export function newArray(
+    className: 'java.util.GregorianCalendar',
+    arg: Java.GregorianCalendar[]
+  ): array_t<java.util.GregorianCalendar>;
+  export function newArray(
+    className: 'java.util.List',
+    arg: Java.List[]
+  ): array_t<java.util.List>;
+  export function newArray(
+    className: 'java.util.TimeZone',
+    arg: Java.TimeZone[]
+  ): array_t<java.util.TimeZone>;
   export function newArray<T>(className: string, arg: any[]): array_t<T>;
   export function newArray<T>(className: string, arg: any[]): array_t<T> {
     var fullName: string = fullyQualifiedName(className) || className;
@@ -1908,7 +2488,7 @@ export module Java {
   // Handling of other primitive numeric types is simpler, as there is no loss of precision.
   export type boolean_t = boolean;
   export type short_t = number;
-  export type integer_t = number;
+  export type integer_t = number | Java.java.lang.Integer;
   export type double_t = number;
   export type float_t = number;
   export type number_t = number;
@@ -1941,8 +2521,15 @@ export module Java {
   export import VCard = ezvcard.VCard;
   export import VCardDataType = ezvcard.VCardDataType;
   export import VCardVersion = ezvcard.VCardVersion;
+  export import File = java.io.File;
+  export import Integer = java.lang.Integer;
   export import Object = java.lang.Object;
+  export import Field = java.lang.reflect.Field;
   export import String = java.lang.String;
+  export import Calendar = java.util.Calendar;
+  export import GregorianCalendar = java.util.GregorianCalendar;
+  export import List = java.util.List;
+  export import TimeZone = java.util.TimeZone;
 
   export module ezvcard {
     export interface Ezvcard extends Java.java.lang.Object {
@@ -1955,9 +2542,9 @@ export module Java {
       getClass(): object_t;
       getClassP(): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final native void java.lang.Object.notify()
       notifyA(cb: Callback<void>): void;
       notify(): void;
@@ -1971,9 +2558,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2003,9 +2590,9 @@ export module Java {
         parse(arg0: object_t): object_t;
         parseP(arg0: object_t): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingTextParser<ezvcard.io.chain.ChainingTextParser<?>> ezvcard.Ezvcard.parse(java.io.File)
-        parseA(arg0: object_t, cb: Callback<object_t>): void;
-        parse(arg0: object_t): object_t;
-        parseP(arg0: object_t): Promise<object_t>;
+        parseA(arg0: Java.File, cb: Callback<object_t>): void;
+        parse(arg0: Java.File): object_t;
+        parseP(arg0: Java.File): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingHtmlStringParser ezvcard.Ezvcard.parseHtml(java.lang.String)
         parseHtmlA(arg0: string_t, cb: Callback<object_t>): void;
         parseHtml(arg0: string_t): object_t;
@@ -2023,9 +2610,9 @@ export module Java {
         parseHtml(arg0: object_t): object_t;
         parseHtmlP(arg0: object_t): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingHtmlParser<ezvcard.io.chain.ChainingHtmlParser<?>> ezvcard.Ezvcard.parseHtml(java.io.File)
-        parseHtmlA(arg0: object_t, cb: Callback<object_t>): void;
-        parseHtml(arg0: object_t): object_t;
-        parseHtmlP(arg0: object_t): Promise<object_t>;
+        parseHtmlA(arg0: Java.File, cb: Callback<object_t>): void;
+        parseHtml(arg0: Java.File): object_t;
+        parseHtmlP(arg0: Java.File): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingJsonStringParser ezvcard.Ezvcard.parseJson(java.lang.String)
         parseJsonA(arg0: string_t, cb: Callback<object_t>): void;
         parseJson(arg0: string_t): object_t;
@@ -2039,9 +2626,9 @@ export module Java {
         parseJson(arg0: object_t): object_t;
         parseJsonP(arg0: object_t): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingJsonParser<ezvcard.io.chain.ChainingJsonParser<?>> ezvcard.Ezvcard.parseJson(java.io.File)
-        parseJsonA(arg0: object_t, cb: Callback<object_t>): void;
-        parseJson(arg0: object_t): object_t;
-        parseJsonP(arg0: object_t): Promise<object_t>;
+        parseJsonA(arg0: Java.File, cb: Callback<object_t>): void;
+        parseJson(arg0: Java.File): object_t;
+        parseJsonP(arg0: Java.File): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingXmlMemoryParser ezvcard.Ezvcard.parseXml(org.w3c.dom.Document)
         parseXmlA(arg0: object_t, cb: Callback<object_t>): void;
         parseXml(arg0: object_t): object_t;
@@ -2059,9 +2646,9 @@ export module Java {
         parseXml(arg0: object_t): object_t;
         parseXmlP(arg0: object_t): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingXmlParser<ezvcard.io.chain.ChainingXmlParser<?>> ezvcard.Ezvcard.parseXml(java.io.File)
-        parseXmlA(arg0: object_t, cb: Callback<object_t>): void;
-        parseXml(arg0: object_t): object_t;
-        parseXmlP(arg0: object_t): Promise<object_t>;
+        parseXmlA(arg0: Java.File, cb: Callback<object_t>): void;
+        parseXml(arg0: Java.File): object_t;
+        parseXmlP(arg0: Java.File): Promise<object_t>;
         // public static ezvcard.io.chain.ChainingTextWriter ezvcard.Ezvcard.write(java.util.Collection<ezvcard.VCard>)
         writeA(arg0: object_t, cb: Callback<Java.ChainingTextWriter>): void;
         write(arg0: object_t): Java.ChainingTextWriter;
@@ -2131,9 +2718,9 @@ export module Java {
       getClass(): object_t;
       getClassP(): Promise<object_t>;
       // public void ezvcard.io.chain.ChainingTextWriter.go(java.io.File,boolean) throws java.io.IOException
-      goA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      go(arg0: object_t, arg1: object_t): void;
-      goP(arg0: object_t, arg1: object_t): Promise<void>;
+      goA(arg0: Java.File, arg1: object_t, cb: Callback<void>): void;
+      go(arg0: Java.File, arg1: object_t): void;
+      goP(arg0: Java.File, arg1: object_t): Promise<void>;
       // public void ezvcard.io.chain.ChainingTextWriter.go(java.io.OutputStream) throws java.io.IOException
       goA(arg0: object_t, cb: Callback<void>): void;
       go(arg0: object_t): void;
@@ -2143,17 +2730,17 @@ export module Java {
       go(arg0: object_t): void;
       goP(arg0: object_t): Promise<void>;
       // public void ezvcard.io.chain.ChainingTextWriter.go(java.io.File) throws java.io.IOException
-      goA(arg0: object_t, cb: Callback<void>): void;
-      go(arg0: object_t): void;
-      goP(arg0: object_t): Promise<void>;
+      goA(arg0: Java.File, cb: Callback<void>): void;
+      go(arg0: Java.File): void;
+      goP(arg0: Java.File): Promise<void>;
       // public java.lang.String ezvcard.io.chain.ChainingTextWriter.go()
       goA(cb: Callback<string>): void;
       go(): string;
       goP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public ezvcard.io.chain.ChainingTextWriter ezvcard.io.chain.ChainingTextWriter.includeTrailingSemicolons(java.lang.Boolean)
       includeTrailingSemicolonsA(
         arg0: object_t,
@@ -2217,9 +2804,9 @@ export module Java {
       versionStrict(arg0: object_t): object_t;
       versionStrictP(arg0: object_t): Promise<object_t>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2240,13 +2827,13 @@ export module Java {
   export module ezvcard {
     export interface Messages extends Java.java.lang.Object {
       // public int java.lang.Enum.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public final int java.lang.Enum.compareTo(E)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public final java.util.Optional<java.lang.Enum$EnumDesc<E>> java.lang.Enum.describeConstable()
       describeConstableA(cb: Callback<object_t>): void;
       describeConstable(): object_t;
@@ -2265,40 +2852,40 @@ export module Java {
       getDeclaringClassP(): Promise<object_t>;
       // public java.lang.String ezvcard.Messages.getExceptionMessage(int,java.lang.Object...)
       getExceptionMessageA(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t,
         cb: Callback<string>
       ): void;
-      getExceptionMessage(arg0: object_t, ...arg1: object_t[]): string;
-      getExceptionMessage(arg0: object_t, arg1: object_array_t): string;
+      getExceptionMessage(arg0: integer_t, ...arg1: object_t[]): string;
+      getExceptionMessage(arg0: integer_t, arg1: object_array_t): string;
       getExceptionMessageP(
-        arg0: object_t,
+        arg0: integer_t,
         ...arg1: object_t[]
       ): Promise<string>;
       getExceptionMessageP(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t
       ): Promise<string>;
       // public java.lang.IllegalArgumentException ezvcard.Messages.getIllegalArgumentException(int,java.lang.Object...)
       getIllegalArgumentExceptionA(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t,
         cb: Callback<object_t>
       ): void;
       getIllegalArgumentException(
-        arg0: object_t,
+        arg0: integer_t,
         ...arg1: object_t[]
       ): object_t;
       getIllegalArgumentException(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t
       ): object_t;
       getIllegalArgumentExceptionP(
-        arg0: object_t,
+        arg0: integer_t,
         ...arg1: object_t[]
       ): Promise<object_t>;
       getIllegalArgumentExceptionP(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t
       ): Promise<object_t>;
       // public java.lang.String ezvcard.Messages.getMessage(java.lang.String,java.lang.Object...)
@@ -2313,34 +2900,34 @@ export module Java {
       getMessageP(arg0: string_t, arg1: object_array_t): Promise<string>;
       // public java.lang.String ezvcard.Messages.getParseMessage(int,java.lang.Object...)
       getParseMessageA(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t,
         cb: Callback<string>
       ): void;
-      getParseMessage(arg0: object_t, ...arg1: object_t[]): string;
-      getParseMessage(arg0: object_t, arg1: object_array_t): string;
-      getParseMessageP(arg0: object_t, ...arg1: object_t[]): Promise<string>;
-      getParseMessageP(arg0: object_t, arg1: object_array_t): Promise<string>;
+      getParseMessage(arg0: integer_t, ...arg1: object_t[]): string;
+      getParseMessage(arg0: integer_t, arg1: object_array_t): string;
+      getParseMessageP(arg0: integer_t, ...arg1: object_t[]): Promise<string>;
+      getParseMessageP(arg0: integer_t, arg1: object_array_t): Promise<string>;
       // public java.lang.String ezvcard.Messages.getValidationWarning(int,java.lang.Object...)
       getValidationWarningA(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t,
         cb: Callback<string>
       ): void;
-      getValidationWarning(arg0: object_t, ...arg1: object_t[]): string;
-      getValidationWarning(arg0: object_t, arg1: object_array_t): string;
+      getValidationWarning(arg0: integer_t, ...arg1: object_t[]): string;
+      getValidationWarning(arg0: integer_t, arg1: object_array_t): string;
       getValidationWarningP(
-        arg0: object_t,
+        arg0: integer_t,
         ...arg1: object_t[]
       ): Promise<string>;
       getValidationWarningP(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: object_array_t
       ): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final java.lang.String java.lang.Enum.name()
       nameA(cb: Callback<string>): void;
       name(): string;
@@ -2354,17 +2941,17 @@ export module Java {
       notifyAll(): void;
       notifyAllP(): Promise<void>;
       // public final int java.lang.Enum.ordinal()
-      ordinalA(cb: Callback<object_t>): void;
-      ordinal(): object_t;
-      ordinalP(): Promise<object_t>;
+      ordinalA(cb: Callback<number>): void;
+      ordinal(): number;
+      ordinalP(): Promise<number>;
       // public java.lang.String java.lang.Object.toString()
       toStringA(cb: Callback<string>): void;
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2413,9 +3000,9 @@ export module Java {
       getValue(): string;
       getValueP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public boolean ezvcard.parameter.VCardParameter.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -2433,9 +3020,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2498,9 +3085,9 @@ export module Java {
       getValue(): string;
       getValueP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public boolean ezvcard.parameter.VCardParameter.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -2518,9 +3105,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2589,9 +3176,9 @@ export module Java {
       getValue(): string;
       getValueP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public boolean ezvcard.parameter.VCardParameter.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -2609,9 +3196,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2663,13 +3250,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.VCardProperty ezvcard.property.Address.copy()
       copyA(cb: Callback<object_t>): void;
       copy(): object_t;
@@ -2691,9 +3278,9 @@ export module Java {
       getClass(): object_t;
       getClassP(): Promise<object_t>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getCountries()
-      getCountriesA(cb: Callback<object_t>): void;
-      getCountries(): object_t;
-      getCountriesP(): Promise<object_t>;
+      getCountriesA(cb: Callback<Java.List>): void;
+      getCountries(): Java.List;
+      getCountriesP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getCountry()
       getCountryA(cb: Callback<string>): void;
       getCountry(): string;
@@ -2703,9 +3290,9 @@ export module Java {
       getExtendedAddress(): string;
       getExtendedAddressP(): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getExtendedAddresses()
-      getExtendedAddressesA(cb: Callback<object_t>): void;
-      getExtendedAddresses(): object_t;
-      getExtendedAddressesP(): Promise<object_t>;
+      getExtendedAddressesA(cb: Callback<Java.List>): void;
+      getExtendedAddresses(): Java.List;
+      getExtendedAddressesP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getExtendedAddressFull()
       getExtendedAddressFullA(cb: Callback<string>): void;
       getExtendedAddressFull(): string;
@@ -2727,9 +3314,9 @@ export module Java {
       getLanguage(): string;
       getLanguageP(): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getLocalities()
-      getLocalitiesA(cb: Callback<object_t>): void;
-      getLocalities(): object_t;
-      getLocalitiesP(): Promise<object_t>;
+      getLocalitiesA(cb: Callback<Java.List>): void;
+      getLocalities(): Java.List;
+      getLocalitiesP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getLocality()
       getLocalityA(cb: Callback<string>): void;
       getLocality(): string;
@@ -2739,53 +3326,53 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
       getParametersP(): Promise<object_t>;
       // public java.util.List<ezvcard.parameter.Pid> ezvcard.property.Address.getPids()
-      getPidsA(cb: Callback<object_t>): void;
-      getPids(): object_t;
-      getPidsP(): Promise<object_t>;
+      getPidsA(cb: Callback<Java.List>): void;
+      getPids(): Java.List;
+      getPidsP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getPoBox()
       getPoBoxA(cb: Callback<string>): void;
       getPoBox(): string;
       getPoBoxP(): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getPoBoxes()
-      getPoBoxesA(cb: Callback<object_t>): void;
-      getPoBoxes(): object_t;
-      getPoBoxesP(): Promise<object_t>;
+      getPoBoxesA(cb: Callback<Java.List>): void;
+      getPoBoxes(): Java.List;
+      getPoBoxesP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getPostalCode()
       getPostalCodeA(cb: Callback<string>): void;
       getPostalCode(): string;
       getPostalCodeP(): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getPostalCodes()
-      getPostalCodesA(cb: Callback<object_t>): void;
-      getPostalCodes(): object_t;
-      getPostalCodesP(): Promise<object_t>;
+      getPostalCodesA(cb: Callback<Java.List>): void;
+      getPostalCodes(): Java.List;
+      getPostalCodesP(): Promise<Java.List>;
       // public java.lang.Integer ezvcard.property.Address.getPref()
-      getPrefA(cb: Callback<object_t>): void;
-      getPref(): object_t;
-      getPrefP(): Promise<object_t>;
+      getPrefA(cb: Callback<number>): void;
+      getPref(): number;
+      getPrefP(): Promise<number>;
       // public java.lang.String ezvcard.property.Address.getRegion()
       getRegionA(cb: Callback<string>): void;
       getRegion(): string;
       getRegionP(): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getRegions()
-      getRegionsA(cb: Callback<object_t>): void;
-      getRegions(): object_t;
-      getRegionsP(): Promise<object_t>;
+      getRegionsA(cb: Callback<Java.List>): void;
+      getRegions(): Java.List;
+      getRegionsP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getStreetAddress()
       getStreetAddressA(cb: Callback<string>): void;
       getStreetAddress(): string;
       getStreetAddressP(): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.Address.getStreetAddresses()
-      getStreetAddressesA(cb: Callback<object_t>): void;
-      getStreetAddresses(): object_t;
-      getStreetAddressesP(): Promise<object_t>;
+      getStreetAddressesA(cb: Callback<Java.List>): void;
+      getStreetAddresses(): Java.List;
+      getStreetAddressesP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.Address.getStreetAddressFull()
       getStreetAddressFullA(cb: Callback<string>): void;
       getStreetAddressFull(): string;
@@ -2799,13 +3386,13 @@ export module Java {
       getTimezone(): string;
       getTimezoneP(): Promise<string>;
       // public java.util.List<ezvcard.parameter.AddressType> ezvcard.property.Address.getTypes()
-      getTypesA(cb: Callback<object_t>): void;
-      getTypes(): object_t;
-      getTypesP(): Promise<object_t>;
+      getTypesA(cb: Callback<Java.List>): void;
+      getTypes(): Java.List;
+      getTypesP(): Promise<Java.List>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final boolean ezvcard.property.VCardProperty.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -2871,9 +3458,9 @@ export module Java {
       setPostalCode(arg0: string_t): void;
       setPostalCodeP(arg0: string_t): Promise<void>;
       // public void ezvcard.property.Address.setPref(java.lang.Integer)
-      setPrefA(arg0: object_t, cb: Callback<void>): void;
-      setPref(arg0: object_t): void;
-      setPrefP(arg0: object_t): Promise<void>;
+      setPrefA(arg0: integer_t, cb: Callback<void>): void;
+      setPref(arg0: integer_t): void;
+      setPrefP(arg0: integer_t): Promise<void>;
       // public void ezvcard.property.Address.setRegion(java.lang.String)
       setRegionA(arg0: string_t, cb: Callback<void>): void;
       setRegion(arg0: string_t): void;
@@ -2894,14 +3481,14 @@ export module Java {
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -2927,13 +3514,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.VCardProperty ezvcard.property.Birthday.copy()
       copyA(cb: Callback<object_t>): void;
       copy(): object_t;
@@ -2975,9 +3562,9 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
@@ -2995,9 +3582,9 @@ export module Java {
       getText(): string;
       getTextP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public boolean ezvcard.property.DateOrTimeProperty.hasTime()
       hasTimeA(cb: Callback<object_t>): void;
       hasTime(): object_t;
@@ -3062,14 +3649,14 @@ export module Java {
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3098,13 +3685,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.VCardProperty ezvcard.property.Photo.copy()
       copyA(cb: Callback<object_t>): void;
       copy(): object_t;
@@ -3142,21 +3729,21 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
       getParametersP(): Promise<object_t>;
       // public java.util.List<ezvcard.parameter.Pid> ezvcard.property.BinaryProperty.getPids()
-      getPidsA(cb: Callback<object_t>): void;
-      getPids(): object_t;
-      getPidsP(): Promise<object_t>;
+      getPidsA(cb: Callback<Java.List>): void;
+      getPids(): Java.List;
+      getPidsP(): Promise<Java.List>;
       // public java.lang.Integer ezvcard.property.BinaryProperty.getPref()
-      getPrefA(cb: Callback<object_t>): void;
-      getPref(): object_t;
-      getPrefP(): Promise<object_t>;
+      getPrefA(cb: Callback<number>): void;
+      getPref(): number;
+      getPrefP(): Promise<number>;
       // public final ezvcard.VCardVersion[] ezvcard.property.VCardProperty.getSupportedVersions()
       getSupportedVersionsA(cb: Callback<Java.VCardVersion[]>): void;
       getSupportedVersions(): Java.VCardVersion[];
@@ -3170,9 +3757,9 @@ export module Java {
       getUrl(): string;
       getUrlP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final boolean ezvcard.property.VCardProperty.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -3214,9 +3801,9 @@ export module Java {
       setParameters(arg0: object_t): void;
       setParametersP(arg0: object_t): Promise<void>;
       // public void ezvcard.property.BinaryProperty.setPref(java.lang.Integer)
-      setPrefA(arg0: object_t, cb: Callback<void>): void;
-      setPref(arg0: object_t): void;
-      setPrefP(arg0: object_t): Promise<void>;
+      setPrefA(arg0: integer_t, cb: Callback<void>): void;
+      setPref(arg0: integer_t): void;
+      setPrefP(arg0: integer_t): Promise<void>;
       // public void ezvcard.property.BinaryProperty.setType(java.lang.String)
       setTypeA(arg0: string_t, cb: Callback<void>): void;
       setType(arg0: string_t): void;
@@ -3233,14 +3820,14 @@ export module Java {
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3255,7 +3842,7 @@ export module Java {
         class: Java.Object;
         new (arg0: object_t, arg1: Java.ImageType): ezvcard.property.Photo;
         new (arg0: string_t, arg1: Java.ImageType): ezvcard.property.Photo;
-        new (arg0: object_t, arg1: Java.ImageType): ezvcard.property.Photo;
+        new (arg0: Java.File, arg1: Java.ImageType): ezvcard.property.Photo;
         new (
           arg0: object_array_t,
           arg1: Java.ImageType
@@ -3272,13 +3859,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.VCardProperty ezvcard.property.Revision.copy()
       copyA(cb: Callback<object_t>): void;
       copy(): object_t;
@@ -3304,9 +3891,9 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
@@ -3320,9 +3907,9 @@ export module Java {
       getValue(): object_t;
       getValueP(): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final boolean ezvcard.property.VCardProperty.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -3363,14 +3950,14 @@ export module Java {
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3400,13 +3987,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.StructuredName ezvcard.property.StructuredName.copy()
       copyA(cb: Callback<Java.StructuredName>): void;
       copy(): Java.StructuredName;
@@ -3420,9 +4007,9 @@ export module Java {
       equals(arg0: object_t): object_t;
       equalsP(arg0: object_t): Promise<object_t>;
       // public java.util.List<java.lang.String> ezvcard.property.StructuredName.getAdditionalNames()
-      getAdditionalNamesA(cb: Callback<object_t>): void;
-      getAdditionalNames(): object_t;
-      getAdditionalNamesP(): Promise<object_t>;
+      getAdditionalNamesA(cb: Callback<Java.List>): void;
+      getAdditionalNames(): Java.List;
+      getAdditionalNamesP(): Promise<Java.List>;
       // public java.lang.String ezvcard.property.StructuredName.getAltId()
       getAltIdA(cb: Callback<string>): void;
       getAltId(): string;
@@ -3452,33 +4039,33 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
       getParametersP(): Promise<object_t>;
       // public java.util.List<java.lang.String> ezvcard.property.StructuredName.getPrefixes()
-      getPrefixesA(cb: Callback<object_t>): void;
-      getPrefixes(): object_t;
-      getPrefixesP(): Promise<object_t>;
+      getPrefixesA(cb: Callback<Java.List>): void;
+      getPrefixes(): Java.List;
+      getPrefixesP(): Promise<Java.List>;
       // public java.util.List<java.lang.String> ezvcard.property.StructuredName.getSortAs()
-      getSortAsA(cb: Callback<object_t>): void;
-      getSortAs(): object_t;
-      getSortAsP(): Promise<object_t>;
+      getSortAsA(cb: Callback<Java.List>): void;
+      getSortAs(): Java.List;
+      getSortAsP(): Promise<Java.List>;
       // public java.util.List<java.lang.String> ezvcard.property.StructuredName.getSuffixes()
-      getSuffixesA(cb: Callback<object_t>): void;
-      getSuffixes(): object_t;
-      getSuffixesP(): Promise<object_t>;
+      getSuffixesA(cb: Callback<Java.List>): void;
+      getSuffixes(): Java.List;
+      getSuffixesP(): Promise<Java.List>;
       // public final ezvcard.VCardVersion[] ezvcard.property.VCardProperty.getSupportedVersions()
       getSupportedVersionsA(cb: Callback<Java.VCardVersion[]>): void;
       getSupportedVersions(): Java.VCardVersion[];
       getSupportedVersionsP(): Promise<Java.VCardVersion[]>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final boolean ezvcard.property.VCardProperty.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -3539,14 +4126,14 @@ export module Java {
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3572,13 +4159,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.VCardProperty ezvcard.property.Timezone.copy()
       copyA(cb: Callback<object_t>): void;
       copy(): object_t;
@@ -3616,21 +4203,21 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
       getParametersP(): Promise<object_t>;
       // public java.util.List<ezvcard.parameter.Pid> ezvcard.property.Timezone.getPids()
-      getPidsA(cb: Callback<object_t>): void;
-      getPids(): object_t;
-      getPidsP(): Promise<object_t>;
+      getPidsA(cb: Callback<Java.List>): void;
+      getPids(): Java.List;
+      getPidsP(): Promise<Java.List>;
       // public java.lang.Integer ezvcard.property.Timezone.getPref()
-      getPrefA(cb: Callback<object_t>): void;
-      getPref(): object_t;
-      getPrefP(): Promise<object_t>;
+      getPrefA(cb: Callback<number>): void;
+      getPref(): number;
+      getPrefP(): Promise<number>;
       // public final ezvcard.VCardVersion[] ezvcard.property.VCardProperty.getSupportedVersions()
       getSupportedVersionsA(cb: Callback<Java.VCardVersion[]>): void;
       getSupportedVersions(): Java.VCardVersion[];
@@ -3644,9 +4231,9 @@ export module Java {
       getType(): string;
       getTypeP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final boolean ezvcard.property.VCardProperty.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -3688,9 +4275,9 @@ export module Java {
       setParameters(arg0: object_t): void;
       setParametersP(arg0: object_t): Promise<void>;
       // public void ezvcard.property.Timezone.setPref(java.lang.Integer)
-      setPrefA(arg0: object_t, cb: Callback<void>): void;
-      setPref(arg0: object_t): void;
-      setPrefP(arg0: object_t): Promise<void>;
+      setPrefA(arg0: integer_t, cb: Callback<void>): void;
+      setPref(arg0: integer_t): void;
+      setPrefP(arg0: integer_t): Promise<void>;
       // public void ezvcard.property.Timezone.setText(java.lang.String)
       setTextA(arg0: string_t, cb: Callback<void>): void;
       setText(arg0: string_t): void;
@@ -3704,21 +4291,21 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public java.util.TimeZone ezvcard.property.Timezone.toTimeZone()
-      toTimeZoneA(cb: Callback<object_t>): void;
-      toTimeZone(): object_t;
-      toTimeZoneP(): Promise<object_t>;
+      toTimeZoneA(cb: Callback<Java.TimeZone>): void;
+      toTimeZone(): Java.TimeZone;
+      toTimeZoneP(): Promise<Java.TimeZone>;
       // public final java.util.List<ezvcard.ValidationWarning> ezvcard.property.VCardProperty.validate(ezvcard.VCardVersion,ezvcard.VCard)
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3734,7 +4321,7 @@ export module Java {
         new (arg0: object_t, arg1: string_t): ezvcard.property.Timezone;
         new (arg0: Java.Timezone): ezvcard.property.Timezone;
         new (arg0: object_t): ezvcard.property.Timezone;
-        new (arg0: object_t): ezvcard.property.Timezone;
+        new (arg0: Java.TimeZone): ezvcard.property.Timezone;
         new (arg0: string_t): ezvcard.property.Timezone;
       }
     }
@@ -3747,13 +4334,13 @@ export module Java {
       addParameter(arg0: string_t, arg1: string_t): void;
       addParameterP(arg0: string_t, arg1: string_t): Promise<void>;
       // public int ezvcard.property.VCardProperty.compareTo(ezvcard.property.VCardProperty)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int ezvcard.property.VCardProperty.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public ezvcard.property.VCardProperty ezvcard.property.Uid.copy()
       copyA(cb: Callback<object_t>): void;
       copy(): object_t;
@@ -3779,9 +4366,9 @@ export module Java {
       getParameter(arg0: string_t): string;
       getParameterP(arg0: string_t): Promise<string>;
       // public java.util.List<java.lang.String> ezvcard.property.VCardProperty.getParameters(java.lang.String)
-      getParametersA(arg0: string_t, cb: Callback<object_t>): void;
-      getParameters(arg0: string_t): object_t;
-      getParametersP(arg0: string_t): Promise<object_t>;
+      getParametersA(arg0: string_t, cb: Callback<Java.List>): void;
+      getParameters(arg0: string_t): Java.List;
+      getParametersP(arg0: string_t): Promise<Java.List>;
       // public ezvcard.parameter.VCardParameters ezvcard.property.VCardProperty.getParameters()
       getParametersA(cb: Callback<object_t>): void;
       getParameters(): object_t;
@@ -3795,9 +4382,9 @@ export module Java {
       getValue(): object_t;
       getValueP(): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final boolean ezvcard.property.VCardProperty.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -3838,14 +4425,14 @@ export module Java {
       validateA(
         arg0: Java.VCardVersion,
         arg1: Java.VCard,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      validate(arg0: Java.VCardVersion, arg1: Java.VCard): object_t;
-      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<object_t>;
+      validate(arg0: Java.VCardVersion, arg1: Java.VCard): Java.List;
+      validateP(arg0: Java.VCardVersion, arg1: Java.VCard): Promise<Java.List>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3879,9 +4466,9 @@ export module Java {
       equals(arg0: object_t): object_t;
       equalsP(arg0: object_t): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public java.lang.String java.lang.Object.toString()
       toStringA(cb: Callback<string>): void;
       toString(): string;
@@ -3909,17 +4496,17 @@ export module Java {
       getClass(): object_t;
       getClassP(): Promise<object_t>;
       // public java.lang.Integer ezvcard.ValidationWarning.getCode()
-      getCodeA(cb: Callback<object_t>): void;
-      getCode(): object_t;
-      getCodeP(): Promise<object_t>;
+      getCodeA(cb: Callback<number>): void;
+      getCode(): number;
+      getCodeP(): Promise<number>;
       // public java.lang.String ezvcard.ValidationWarning.getMessage()
       getMessageA(cb: Callback<string>): void;
       getMessage(): string;
       getMessageP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final native void java.lang.Object.notify()
       notifyA(cb: Callback<void>): void;
       notify(): void;
@@ -3933,9 +4520,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -3948,7 +4535,7 @@ export module Java {
     export module ValidationWarning {
       export interface Static {
         class: Java.Object;
-        new (arg0: object_t, ...arg1: object_t[]): ezvcard.ValidationWarning;
+        new (arg0: integer_t, ...arg1: object_t[]): ezvcard.ValidationWarning;
         new (arg0: string_t): ezvcard.ValidationWarning;
       }
     }
@@ -3965,9 +4552,9 @@ export module Java {
       add(arg0: object_t, arg1: Java.ValidationWarning): void;
       addP(arg0: object_t, arg1: Java.ValidationWarning): Promise<void>;
       // public void ezvcard.ValidationWarnings.add(ezvcard.property.VCardProperty,java.util.List<ezvcard.ValidationWarning>)
-      addA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      add(arg0: object_t, arg1: object_t): void;
-      addP(arg0: object_t, arg1: object_t): Promise<void>;
+      addA(arg0: object_t, arg1: Java.List, cb: Callback<void>): void;
+      add(arg0: object_t, arg1: Java.List): void;
+      addP(arg0: object_t, arg1: Java.List): Promise<void>;
       // public boolean java.lang.Object.equals(java.lang.Object)
       equalsA(arg0: object_t, cb: Callback<object_t>): void;
       equals(arg0: object_t): object_t;
@@ -3977,9 +4564,9 @@ export module Java {
       forEach(arg0: object_t): void;
       forEachP(arg0: object_t): Promise<void>;
       // public java.util.List<ezvcard.ValidationWarning> ezvcard.ValidationWarnings.getByProperty(java.lang.Class<? extends ezvcard.property.VCardProperty>)
-      getByPropertyA(arg0: object_t, cb: Callback<object_t>): void;
-      getByProperty(arg0: object_t): object_t;
-      getByPropertyP(arg0: object_t): Promise<object_t>;
+      getByPropertyA(arg0: object_t, cb: Callback<Java.List>): void;
+      getByProperty(arg0: object_t): Java.List;
+      getByPropertyP(arg0: object_t): Promise<Java.List>;
       // public final native java.lang.Class<?> java.lang.Object.getClass()
       getClassA(cb: Callback<object_t>): void;
       getClass(): object_t;
@@ -3989,9 +4576,9 @@ export module Java {
       getWarnings(): object_t;
       getWarningsP(): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public boolean ezvcard.ValidationWarnings.isEmpty()
       isEmptyA(cb: Callback<object_t>): void;
       isEmpty(): object_t;
@@ -4017,9 +4604,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -4471,17 +5058,17 @@ export module Java {
       forEach(arg0: object_t): void;
       forEachP(arg0: object_t): Promise<void>;
       // public java.util.List<ezvcard.property.Address> ezvcard.VCard.getAddresses()
-      getAddressesA(cb: Callback<object_t>): void;
-      getAddresses(): object_t;
-      getAddressesP(): Promise<object_t>;
+      getAddressesA(cb: Callback<Java.List>): void;
+      getAddresses(): Java.List;
+      getAddressesP(): Promise<Java.List>;
       // public ezvcard.property.Agent ezvcard.VCard.getAgent()
       getAgentA(cb: Callback<object_t>): void;
       getAgent(): object_t;
       getAgentP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Anniversary> ezvcard.VCard.getAnniversaries()
-      getAnniversariesA(cb: Callback<object_t>): void;
-      getAnniversaries(): object_t;
-      getAnniversariesP(): Promise<object_t>;
+      getAnniversariesA(cb: Callback<Java.List>): void;
+      getAnniversaries(): Java.List;
+      getAnniversariesP(): Promise<Java.List>;
       // public ezvcard.property.Anniversary ezvcard.VCard.getAnniversary()
       getAnniversaryA(cb: Callback<object_t>): void;
       getAnniversary(): object_t;
@@ -4491,33 +5078,33 @@ export module Java {
       getBirthday(): Java.Birthday;
       getBirthdayP(): Promise<Java.Birthday>;
       // public java.util.List<ezvcard.property.Birthday> ezvcard.VCard.getBirthdays()
-      getBirthdaysA(cb: Callback<object_t>): void;
-      getBirthdays(): object_t;
-      getBirthdaysP(): Promise<object_t>;
+      getBirthdaysA(cb: Callback<Java.List>): void;
+      getBirthdays(): Java.List;
+      getBirthdaysP(): Promise<Java.List>;
       // public ezvcard.property.Birthplace ezvcard.VCard.getBirthplace()
       getBirthplaceA(cb: Callback<object_t>): void;
       getBirthplace(): object_t;
       getBirthplaceP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Birthplace> ezvcard.VCard.getBirthplaces()
-      getBirthplacesA(cb: Callback<object_t>): void;
-      getBirthplaces(): object_t;
-      getBirthplacesP(): Promise<object_t>;
+      getBirthplacesA(cb: Callback<Java.List>): void;
+      getBirthplaces(): Java.List;
+      getBirthplacesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.CalendarRequestUri> ezvcard.VCard.getCalendarRequestUris()
-      getCalendarRequestUrisA(cb: Callback<object_t>): void;
-      getCalendarRequestUris(): object_t;
-      getCalendarRequestUrisP(): Promise<object_t>;
+      getCalendarRequestUrisA(cb: Callback<Java.List>): void;
+      getCalendarRequestUris(): Java.List;
+      getCalendarRequestUrisP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.CalendarUri> ezvcard.VCard.getCalendarUris()
-      getCalendarUrisA(cb: Callback<object_t>): void;
-      getCalendarUris(): object_t;
-      getCalendarUrisP(): Promise<object_t>;
+      getCalendarUrisA(cb: Callback<Java.List>): void;
+      getCalendarUris(): Java.List;
+      getCalendarUrisP(): Promise<Java.List>;
       // public ezvcard.property.Categories ezvcard.VCard.getCategories()
       getCategoriesA(cb: Callback<object_t>): void;
       getCategories(): object_t;
       getCategoriesP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Categories> ezvcard.VCard.getCategoriesList()
-      getCategoriesListA(cb: Callback<object_t>): void;
-      getCategoriesList(): object_t;
-      getCategoriesListP(): Promise<object_t>;
+      getCategoriesListA(cb: Callback<Java.List>): void;
+      getCategoriesList(): Java.List;
+      getCategoriesListP(): Promise<Java.List>;
       // public final native java.lang.Class<?> java.lang.Object.getClass()
       getClassA(cb: Callback<object_t>): void;
       getClass(): object_t;
@@ -4527,57 +5114,57 @@ export module Java {
       getClassification(): object_t;
       getClassificationP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.ClientPidMap> ezvcard.VCard.getClientPidMaps()
-      getClientPidMapsA(cb: Callback<object_t>): void;
-      getClientPidMaps(): object_t;
-      getClientPidMapsP(): Promise<object_t>;
+      getClientPidMapsA(cb: Callback<Java.List>): void;
+      getClientPidMaps(): Java.List;
+      getClientPidMapsP(): Promise<Java.List>;
       // public ezvcard.property.Deathdate ezvcard.VCard.getDeathdate()
       getDeathdateA(cb: Callback<object_t>): void;
       getDeathdate(): object_t;
       getDeathdateP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Deathdate> ezvcard.VCard.getDeathdates()
-      getDeathdatesA(cb: Callback<object_t>): void;
-      getDeathdates(): object_t;
-      getDeathdatesP(): Promise<object_t>;
+      getDeathdatesA(cb: Callback<Java.List>): void;
+      getDeathdates(): Java.List;
+      getDeathdatesP(): Promise<Java.List>;
       // public ezvcard.property.Deathplace ezvcard.VCard.getDeathplace()
       getDeathplaceA(cb: Callback<object_t>): void;
       getDeathplace(): object_t;
       getDeathplaceP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Deathplace> ezvcard.VCard.getDeathplaces()
-      getDeathplacesA(cb: Callback<object_t>): void;
-      getDeathplaces(): object_t;
-      getDeathplacesP(): Promise<object_t>;
+      getDeathplacesA(cb: Callback<Java.List>): void;
+      getDeathplaces(): Java.List;
+      getDeathplacesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Email> ezvcard.VCard.getEmails()
-      getEmailsA(cb: Callback<object_t>): void;
-      getEmails(): object_t;
-      getEmailsP(): Promise<object_t>;
+      getEmailsA(cb: Callback<Java.List>): void;
+      getEmails(): Java.List;
+      getEmailsP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Expertise> ezvcard.VCard.getExpertise()
-      getExpertiseA(cb: Callback<object_t>): void;
-      getExpertise(): object_t;
-      getExpertiseP(): Promise<object_t>;
+      getExpertiseA(cb: Callback<Java.List>): void;
+      getExpertise(): Java.List;
+      getExpertiseP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.RawProperty> ezvcard.VCard.getExtendedProperties(java.lang.String)
-      getExtendedPropertiesA(arg0: string_t, cb: Callback<object_t>): void;
-      getExtendedProperties(arg0: string_t): object_t;
-      getExtendedPropertiesP(arg0: string_t): Promise<object_t>;
+      getExtendedPropertiesA(arg0: string_t, cb: Callback<Java.List>): void;
+      getExtendedProperties(arg0: string_t): Java.List;
+      getExtendedPropertiesP(arg0: string_t): Promise<Java.List>;
       // public java.util.List<ezvcard.property.RawProperty> ezvcard.VCard.getExtendedProperties()
-      getExtendedPropertiesA(cb: Callback<object_t>): void;
-      getExtendedProperties(): object_t;
-      getExtendedPropertiesP(): Promise<object_t>;
+      getExtendedPropertiesA(cb: Callback<Java.List>): void;
+      getExtendedProperties(): Java.List;
+      getExtendedPropertiesP(): Promise<Java.List>;
       // public ezvcard.property.RawProperty ezvcard.VCard.getExtendedProperty(java.lang.String)
       getExtendedPropertyA(arg0: string_t, cb: Callback<object_t>): void;
       getExtendedProperty(arg0: string_t): object_t;
       getExtendedPropertyP(arg0: string_t): Promise<object_t>;
       // public java.util.List<ezvcard.property.FreeBusyUrl> ezvcard.VCard.getFbUrls()
-      getFbUrlsA(cb: Callback<object_t>): void;
-      getFbUrls(): object_t;
-      getFbUrlsP(): Promise<object_t>;
+      getFbUrlsA(cb: Callback<Java.List>): void;
+      getFbUrls(): Java.List;
+      getFbUrlsP(): Promise<Java.List>;
       // public ezvcard.property.FormattedName ezvcard.VCard.getFormattedName()
       getFormattedNameA(cb: Callback<object_t>): void;
       getFormattedName(): object_t;
       getFormattedNameP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.FormattedName> ezvcard.VCard.getFormattedNames()
-      getFormattedNamesA(cb: Callback<object_t>): void;
-      getFormattedNames(): object_t;
-      getFormattedNamesP(): Promise<object_t>;
+      getFormattedNamesA(cb: Callback<Java.List>): void;
+      getFormattedNames(): Java.List;
+      getFormattedNamesP(): Promise<Java.List>;
       // public ezvcard.property.Gender ezvcard.VCard.getGender()
       getGenderA(cb: Callback<object_t>): void;
       getGender(): object_t;
@@ -4587,77 +5174,77 @@ export module Java {
       getGeo(): object_t;
       getGeoP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Geo> ezvcard.VCard.getGeos()
-      getGeosA(cb: Callback<object_t>): void;
-      getGeos(): object_t;
-      getGeosP(): Promise<object_t>;
+      getGeosA(cb: Callback<Java.List>): void;
+      getGeos(): Java.List;
+      getGeosP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Hobby> ezvcard.VCard.getHobbies()
-      getHobbiesA(cb: Callback<object_t>): void;
-      getHobbies(): object_t;
-      getHobbiesP(): Promise<object_t>;
+      getHobbiesA(cb: Callback<Java.List>): void;
+      getHobbies(): Java.List;
+      getHobbiesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Impp> ezvcard.VCard.getImpps()
-      getImppsA(cb: Callback<object_t>): void;
-      getImpps(): object_t;
-      getImppsP(): Promise<object_t>;
+      getImppsA(cb: Callback<Java.List>): void;
+      getImpps(): Java.List;
+      getImppsP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Interest> ezvcard.VCard.getInterests()
-      getInterestsA(cb: Callback<object_t>): void;
-      getInterests(): object_t;
-      getInterestsP(): Promise<object_t>;
+      getInterestsA(cb: Callback<Java.List>): void;
+      getInterests(): Java.List;
+      getInterestsP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Key> ezvcard.VCard.getKeys()
-      getKeysA(cb: Callback<object_t>): void;
-      getKeys(): object_t;
-      getKeysP(): Promise<object_t>;
+      getKeysA(cb: Callback<Java.List>): void;
+      getKeys(): Java.List;
+      getKeysP(): Promise<Java.List>;
       // public ezvcard.property.Kind ezvcard.VCard.getKind()
       getKindA(cb: Callback<object_t>): void;
       getKind(): object_t;
       getKindP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Language> ezvcard.VCard.getLanguages()
-      getLanguagesA(cb: Callback<object_t>): void;
-      getLanguages(): object_t;
-      getLanguagesP(): Promise<object_t>;
+      getLanguagesA(cb: Callback<Java.List>): void;
+      getLanguages(): Java.List;
+      getLanguagesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Logo> ezvcard.VCard.getLogos()
-      getLogosA(cb: Callback<object_t>): void;
-      getLogos(): object_t;
-      getLogosP(): Promise<object_t>;
+      getLogosA(cb: Callback<Java.List>): void;
+      getLogos(): Java.List;
+      getLogosP(): Promise<Java.List>;
       // public ezvcard.property.Mailer ezvcard.VCard.getMailer()
       getMailerA(cb: Callback<object_t>): void;
       getMailer(): object_t;
       getMailerP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Member> ezvcard.VCard.getMembers()
-      getMembersA(cb: Callback<object_t>): void;
-      getMembers(): object_t;
-      getMembersP(): Promise<object_t>;
+      getMembersA(cb: Callback<Java.List>): void;
+      getMembers(): Java.List;
+      getMembersP(): Promise<Java.List>;
       // public ezvcard.property.Nickname ezvcard.VCard.getNickname()
       getNicknameA(cb: Callback<object_t>): void;
       getNickname(): object_t;
       getNicknameP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Nickname> ezvcard.VCard.getNicknames()
-      getNicknamesA(cb: Callback<object_t>): void;
-      getNicknames(): object_t;
-      getNicknamesP(): Promise<object_t>;
+      getNicknamesA(cb: Callback<Java.List>): void;
+      getNicknames(): Java.List;
+      getNicknamesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Note> ezvcard.VCard.getNotes()
-      getNotesA(cb: Callback<object_t>): void;
-      getNotes(): object_t;
-      getNotesP(): Promise<object_t>;
+      getNotesA(cb: Callback<Java.List>): void;
+      getNotes(): Java.List;
+      getNotesP(): Promise<Java.List>;
       // public ezvcard.property.Organization ezvcard.VCard.getOrganization()
       getOrganizationA(cb: Callback<object_t>): void;
       getOrganization(): object_t;
       getOrganizationP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Organization> ezvcard.VCard.getOrganizations()
-      getOrganizationsA(cb: Callback<object_t>): void;
-      getOrganizations(): object_t;
-      getOrganizationsP(): Promise<object_t>;
+      getOrganizationsA(cb: Callback<Java.List>): void;
+      getOrganizations(): Java.List;
+      getOrganizationsP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.OrgDirectory> ezvcard.VCard.getOrgDirectories()
-      getOrgDirectoriesA(cb: Callback<object_t>): void;
-      getOrgDirectories(): object_t;
-      getOrgDirectoriesP(): Promise<object_t>;
+      getOrgDirectoriesA(cb: Callback<Java.List>): void;
+      getOrgDirectories(): Java.List;
+      getOrgDirectoriesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Label> ezvcard.VCard.getOrphanedLabels()
-      getOrphanedLabelsA(cb: Callback<object_t>): void;
-      getOrphanedLabels(): object_t;
-      getOrphanedLabelsP(): Promise<object_t>;
+      getOrphanedLabelsA(cb: Callback<Java.List>): void;
+      getOrphanedLabels(): Java.List;
+      getOrphanedLabelsP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Photo> ezvcard.VCard.getPhotos()
-      getPhotosA(cb: Callback<object_t>): void;
-      getPhotos(): object_t;
-      getPhotosP(): Promise<object_t>;
+      getPhotosA(cb: Callback<Java.List>): void;
+      getPhotos(): Java.List;
+      getPhotosP(): Promise<Java.List>;
       // public ezvcard.property.ProductId ezvcard.VCard.getProductId()
       getProductIdA(cb: Callback<object_t>): void;
       getProductId(): object_t;
@@ -4667,93 +5254,93 @@ export module Java {
       getProfile(): object_t;
       getProfileP(): Promise<object_t>;
       // public <T extends ezvcard.property.VCardProperty> java.util.List<T> ezvcard.VCard.getProperties(java.lang.Class<T>)
-      getPropertiesA(arg0: object_t, cb: Callback<object_t>): void;
-      getProperties(arg0: object_t): object_t;
-      getPropertiesP(arg0: object_t): Promise<object_t>;
+      getPropertiesA(arg0: object_t, cb: Callback<Java.List>): void;
+      getProperties(arg0: object_t): Java.List;
+      getPropertiesP(arg0: object_t): Promise<Java.List>;
       // public java.util.Collection<ezvcard.property.VCardProperty> ezvcard.VCard.getProperties()
       getPropertiesA(cb: Callback<object_t>): void;
       getProperties(): object_t;
       getPropertiesP(): Promise<object_t>;
       // public <T extends ezvcard.property.VCardProperty & ezvcard.property.HasAltId> java.util.List<java.util.List<T>> ezvcard.VCard.getPropertiesAlt(java.lang.Class<T>)
-      getPropertiesAltA(arg0: object_t, cb: Callback<object_t>): void;
-      getPropertiesAlt(arg0: object_t): object_t;
-      getPropertiesAltP(arg0: object_t): Promise<object_t>;
+      getPropertiesAltA(arg0: object_t, cb: Callback<Java.List>): void;
+      getPropertiesAlt(arg0: object_t): Java.List;
+      getPropertiesAltP(arg0: object_t): Promise<Java.List>;
       // public <T extends ezvcard.property.VCardProperty> T ezvcard.VCard.getProperty(java.lang.Class<T>)
       getPropertyA(arg0: object_t, cb: Callback<object_t>): void;
       getProperty(arg0: object_t): object_t;
       getPropertyP(arg0: object_t): Promise<object_t>;
       // public java.util.List<ezvcard.property.Related> ezvcard.VCard.getRelations()
-      getRelationsA(cb: Callback<object_t>): void;
-      getRelations(): object_t;
-      getRelationsP(): Promise<object_t>;
+      getRelationsA(cb: Callback<Java.List>): void;
+      getRelations(): Java.List;
+      getRelationsP(): Promise<Java.List>;
       // public ezvcard.property.Revision ezvcard.VCard.getRevision()
       getRevisionA(cb: Callback<Java.Revision>): void;
       getRevision(): Java.Revision;
       getRevisionP(): Promise<Java.Revision>;
       // public java.util.List<ezvcard.property.Role> ezvcard.VCard.getRoles()
-      getRolesA(cb: Callback<object_t>): void;
-      getRoles(): object_t;
-      getRolesP(): Promise<object_t>;
+      getRolesA(cb: Callback<Java.List>): void;
+      getRoles(): Java.List;
+      getRolesP(): Promise<Java.List>;
       // public ezvcard.property.SortString ezvcard.VCard.getSortString()
       getSortStringA(cb: Callback<object_t>): void;
       getSortString(): object_t;
       getSortStringP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Sound> ezvcard.VCard.getSounds()
-      getSoundsA(cb: Callback<object_t>): void;
-      getSounds(): object_t;
-      getSoundsP(): Promise<object_t>;
+      getSoundsA(cb: Callback<Java.List>): void;
+      getSounds(): Java.List;
+      getSoundsP(): Promise<Java.List>;
       // public ezvcard.property.SourceDisplayText ezvcard.VCard.getSourceDisplayText()
       getSourceDisplayTextA(cb: Callback<object_t>): void;
       getSourceDisplayText(): object_t;
       getSourceDisplayTextP(): Promise<object_t>;
       // public java.util.List<ezvcard.property.Source> ezvcard.VCard.getSources()
-      getSourcesA(cb: Callback<object_t>): void;
-      getSources(): object_t;
-      getSourcesP(): Promise<object_t>;
+      getSourcesA(cb: Callback<Java.List>): void;
+      getSources(): Java.List;
+      getSourcesP(): Promise<Java.List>;
       // public ezvcard.property.StructuredName ezvcard.VCard.getStructuredName()
       getStructuredNameA(cb: Callback<Java.StructuredName>): void;
       getStructuredName(): Java.StructuredName;
       getStructuredNameP(): Promise<Java.StructuredName>;
       // public java.util.List<ezvcard.property.StructuredName> ezvcard.VCard.getStructuredNames()
-      getStructuredNamesA(cb: Callback<object_t>): void;
-      getStructuredNames(): object_t;
-      getStructuredNamesP(): Promise<object_t>;
+      getStructuredNamesA(cb: Callback<Java.List>): void;
+      getStructuredNames(): Java.List;
+      getStructuredNamesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Telephone> ezvcard.VCard.getTelephoneNumbers()
-      getTelephoneNumbersA(cb: Callback<object_t>): void;
-      getTelephoneNumbers(): object_t;
-      getTelephoneNumbersP(): Promise<object_t>;
+      getTelephoneNumbersA(cb: Callback<Java.List>): void;
+      getTelephoneNumbers(): Java.List;
+      getTelephoneNumbersP(): Promise<Java.List>;
       // public ezvcard.property.Timezone ezvcard.VCard.getTimezone()
       getTimezoneA(cb: Callback<Java.Timezone>): void;
       getTimezone(): Java.Timezone;
       getTimezoneP(): Promise<Java.Timezone>;
       // public java.util.List<ezvcard.property.Timezone> ezvcard.VCard.getTimezones()
-      getTimezonesA(cb: Callback<object_t>): void;
-      getTimezones(): object_t;
-      getTimezonesP(): Promise<object_t>;
+      getTimezonesA(cb: Callback<Java.List>): void;
+      getTimezones(): Java.List;
+      getTimezonesP(): Promise<Java.List>;
       // public java.util.List<ezvcard.property.Title> ezvcard.VCard.getTitles()
-      getTitlesA(cb: Callback<object_t>): void;
-      getTitles(): object_t;
-      getTitlesP(): Promise<object_t>;
+      getTitlesA(cb: Callback<Java.List>): void;
+      getTitles(): Java.List;
+      getTitlesP(): Promise<Java.List>;
       // public ezvcard.property.Uid ezvcard.VCard.getUid()
       getUidA(cb: Callback<Java.Uid>): void;
       getUid(): Java.Uid;
       getUidP(): Promise<Java.Uid>;
       // public java.util.List<ezvcard.property.Url> ezvcard.VCard.getUrls()
-      getUrlsA(cb: Callback<object_t>): void;
-      getUrls(): object_t;
-      getUrlsP(): Promise<object_t>;
+      getUrlsA(cb: Callback<Java.List>): void;
+      getUrls(): Java.List;
+      getUrlsP(): Promise<Java.List>;
       // public ezvcard.VCardVersion ezvcard.VCard.getVersion()
       getVersionA(cb: Callback<Java.VCardVersion>): void;
       getVersion(): Java.VCardVersion;
       getVersionP(): Promise<Java.VCardVersion>;
       // public java.util.List<ezvcard.property.Xml> ezvcard.VCard.getXmls()
-      getXmlsA(cb: Callback<object_t>): void;
-      getXmls(): object_t;
-      getXmlsP(): Promise<object_t>;
+      getXmlsA(cb: Callback<Java.List>): void;
+      getXmls(): Java.List;
+      getXmlsP(): Promise<Java.List>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public java.util.Iterator<ezvcard.property.VCardProperty> ezvcard.VCard.iterator()
       iteratorA(cb: Callback<object_t>): void;
       iterator(): object_t;
@@ -4767,13 +5354,13 @@ export module Java {
       notifyAll(): void;
       notifyAllP(): Promise<void>;
       // public java.util.List<ezvcard.property.RawProperty> ezvcard.VCard.removeExtendedProperty(java.lang.String)
-      removeExtendedPropertyA(arg0: string_t, cb: Callback<object_t>): void;
-      removeExtendedProperty(arg0: string_t): object_t;
-      removeExtendedPropertyP(arg0: string_t): Promise<object_t>;
+      removeExtendedPropertyA(arg0: string_t, cb: Callback<Java.List>): void;
+      removeExtendedProperty(arg0: string_t): Java.List;
+      removeExtendedPropertyP(arg0: string_t): Promise<Java.List>;
       // public <T extends ezvcard.property.VCardProperty> java.util.List<T> ezvcard.VCard.removeProperties(java.lang.Class<T>)
-      removePropertiesA(arg0: object_t, cb: Callback<object_t>): void;
-      removeProperties(arg0: object_t): object_t;
-      removePropertiesP(arg0: object_t): Promise<object_t>;
+      removePropertiesA(arg0: object_t, cb: Callback<Java.List>): void;
+      removeProperties(arg0: object_t): Java.List;
+      removePropertiesP(arg0: object_t): Promise<Java.List>;
       // public boolean ezvcard.VCard.removeProperty(ezvcard.property.VCardProperty)
       removePropertyA(arg0: object_t, cb: Callback<object_t>): void;
       removeProperty(arg0: object_t): object_t;
@@ -4973,32 +5560,32 @@ export module Java {
       setPropertyA(
         arg0: object_t,
         arg1: object_t,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      setProperty(arg0: object_t, arg1: object_t): object_t;
-      setPropertyP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      setProperty(arg0: object_t, arg1: object_t): Java.List;
+      setPropertyP(arg0: object_t, arg1: object_t): Promise<Java.List>;
       // public java.util.List<ezvcard.property.VCardProperty> ezvcard.VCard.setProperty(ezvcard.property.VCardProperty)
-      setPropertyA(arg0: object_t, cb: Callback<object_t>): void;
-      setProperty(arg0: object_t): object_t;
-      setPropertyP(arg0: object_t): Promise<object_t>;
+      setPropertyA(arg0: object_t, cb: Callback<Java.List>): void;
+      setProperty(arg0: object_t): Java.List;
+      setPropertyP(arg0: object_t): Promise<Java.List>;
       // public <T extends ezvcard.property.VCardProperty & ezvcard.property.HasAltId> java.util.List<T> ezvcard.VCard.setPropertyAlt(java.lang.Class<T>,T...)
       setPropertyAltA(
         arg0: object_t,
         arg1: object_array_t,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      setPropertyAlt(arg0: object_t, ...arg1: object_t[]): object_t;
-      setPropertyAlt(arg0: object_t, arg1: object_array_t): object_t;
-      setPropertyAltP(arg0: object_t, ...arg1: object_t[]): Promise<object_t>;
-      setPropertyAltP(arg0: object_t, arg1: object_array_t): Promise<object_t>;
+      setPropertyAlt(arg0: object_t, ...arg1: object_t[]): Java.List;
+      setPropertyAlt(arg0: object_t, arg1: object_array_t): Java.List;
+      setPropertyAltP(arg0: object_t, ...arg1: object_t[]): Promise<Java.List>;
+      setPropertyAltP(arg0: object_t, arg1: object_array_t): Promise<Java.List>;
       // public <T extends ezvcard.property.VCardProperty & ezvcard.property.HasAltId> java.util.List<T> ezvcard.VCard.setPropertyAlt(java.lang.Class<T>,java.util.Collection<T>)
       setPropertyAltA(
         arg0: object_t,
         arg1: object_t,
-        cb: Callback<object_t>
+        cb: Callback<Java.List>
       ): void;
-      setPropertyAlt(arg0: object_t, arg1: object_t): object_t;
-      setPropertyAltP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      setPropertyAlt(arg0: object_t, arg1: object_t): Java.List;
+      setPropertyAltP(arg0: object_t, arg1: object_t): Promise<Java.List>;
       // public ezvcard.property.Revision ezvcard.VCard.setRevision(java.util.Date)
       setRevisionA(arg0: object_t, cb: Callback<Java.Revision>): void;
       setRevision(arg0: object_t): Java.Revision;
@@ -5070,9 +5657,9 @@ export module Java {
       validate(arg0: Java.VCardVersion): Java.ValidationWarnings;
       validateP(arg0: Java.VCardVersion): Promise<Java.ValidationWarnings>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -5090,9 +5677,9 @@ export module Java {
       write(arg0: object_t): void;
       writeP(arg0: object_t): Promise<void>;
       // public void ezvcard.VCard.write(java.io.File) throws java.io.IOException
-      writeA(arg0: object_t, cb: Callback<void>): void;
-      write(arg0: object_t): void;
-      writeP(arg0: object_t): Promise<void>;
+      writeA(arg0: Java.File, cb: Callback<void>): void;
+      write(arg0: Java.File): void;
+      writeP(arg0: Java.File): Promise<void>;
       // public java.lang.String ezvcard.VCard.write()
       writeA(cb: Callback<string>): void;
       write(): string;
@@ -5106,9 +5693,9 @@ export module Java {
       writeHtml(arg0: object_t): void;
       writeHtmlP(arg0: object_t): Promise<void>;
       // public void ezvcard.VCard.writeHtml(java.io.File) throws java.io.IOException
-      writeHtmlA(arg0: object_t, cb: Callback<void>): void;
-      writeHtml(arg0: object_t): void;
-      writeHtmlP(arg0: object_t): Promise<void>;
+      writeHtmlA(arg0: Java.File, cb: Callback<void>): void;
+      writeHtml(arg0: Java.File): void;
+      writeHtmlP(arg0: Java.File): Promise<void>;
       // public java.lang.String ezvcard.VCard.writeHtml()
       writeHtmlA(cb: Callback<string>): void;
       writeHtml(): string;
@@ -5122,9 +5709,9 @@ export module Java {
       writeJson(arg0: object_t): void;
       writeJsonP(arg0: object_t): Promise<void>;
       // public void ezvcard.VCard.writeJson(java.io.File) throws java.io.IOException
-      writeJsonA(arg0: object_t, cb: Callback<void>): void;
-      writeJson(arg0: object_t): void;
-      writeJsonP(arg0: object_t): Promise<void>;
+      writeJsonA(arg0: Java.File, cb: Callback<void>): void;
+      writeJson(arg0: Java.File): void;
+      writeJsonP(arg0: Java.File): Promise<void>;
       // public java.lang.String ezvcard.VCard.writeJson()
       writeJsonA(cb: Callback<string>): void;
       writeJson(): string;
@@ -5138,9 +5725,9 @@ export module Java {
       writeXml(arg0: object_t): void;
       writeXmlP(arg0: object_t): Promise<void>;
       // public void ezvcard.VCard.writeXml(java.io.File) throws java.io.IOException,javax.xml.transform.TransformerException
-      writeXmlA(arg0: object_t, cb: Callback<void>): void;
-      writeXml(arg0: object_t): void;
-      writeXmlP(arg0: object_t): Promise<void>;
+      writeXmlA(arg0: Java.File, cb: Callback<void>): void;
+      writeXml(arg0: Java.File): void;
+      writeXmlP(arg0: Java.File): Promise<void>;
       // public java.lang.String ezvcard.VCard.writeXml()
       writeXmlA(cb: Callback<string>): void;
       writeXml(): string;
@@ -5175,9 +5762,9 @@ export module Java {
       getSupportedVersions(): Java.VCardVersion[];
       getSupportedVersionsP(): Promise<Java.VCardVersion[]>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public boolean ezvcard.VCardDataType.isSupportedBy(ezvcard.VCardVersion)
       isSupportedByA(arg0: Java.VCardVersion, cb: Callback<object_t>): void;
       isSupportedBy(arg0: Java.VCardVersion): object_t;
@@ -5195,9 +5782,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -5244,13 +5831,13 @@ export module Java {
   export module ezvcard {
     export interface VCardVersion extends Java.java.lang.Object {
       // public int java.lang.Enum.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public final int java.lang.Enum.compareTo(E)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public final java.util.Optional<java.lang.Enum$EnumDesc<E>> java.lang.Enum.describeConstable()
       describeConstableA(cb: Callback<object_t>): void;
       describeConstable(): object_t;
@@ -5280,9 +5867,9 @@ export module Java {
       getXmlNamespace(): string;
       getXmlNamespaceP(): Promise<string>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final java.lang.String java.lang.Enum.name()
       nameA(cb: Callback<string>): void;
       name(): string;
@@ -5296,17 +5883,17 @@ export module Java {
       notifyAll(): void;
       notifyAllP(): Promise<void>;
       // public final int java.lang.Enum.ordinal()
-      ordinalA(cb: Callback<object_t>): void;
-      ordinal(): object_t;
-      ordinalP(): Promise<object_t>;
+      ordinalA(cb: Callback<number>): void;
+      ordinal(): number;
+      ordinalP(): Promise<number>;
       // public java.lang.String java.lang.Object.toString()
       toStringA(cb: Callback<string>): void;
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -5349,6 +5936,602 @@ export module Java {
     }
   }
 
+  export module java.io {
+    export interface File extends Java.java.lang.Object {
+      // public boolean java.io.File.canExecute()
+      canExecuteA(cb: Callback<object_t>): void;
+      canExecute(): object_t;
+      canExecuteP(): Promise<object_t>;
+      // public boolean java.io.File.canRead()
+      canReadA(cb: Callback<object_t>): void;
+      canRead(): object_t;
+      canReadP(): Promise<object_t>;
+      // public boolean java.io.File.canWrite()
+      canWriteA(cb: Callback<object_t>): void;
+      canWrite(): object_t;
+      canWriteP(): Promise<object_t>;
+      // public int java.io.File.compareTo(java.lang.Object)
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
+      // public int java.io.File.compareTo(java.io.File)
+      compareToA(arg0: Java.File, cb: Callback<number>): void;
+      compareTo(arg0: Java.File): number;
+      compareToP(arg0: Java.File): Promise<number>;
+      // public boolean java.io.File.createNewFile() throws java.io.IOException
+      createNewFileA(cb: Callback<object_t>): void;
+      createNewFile(): object_t;
+      createNewFileP(): Promise<object_t>;
+      // public boolean java.io.File.delete()
+      deleteA(cb: Callback<object_t>): void;
+      delete(): object_t;
+      deleteP(): Promise<object_t>;
+      // public void java.io.File.deleteOnExit()
+      deleteOnExitA(cb: Callback<void>): void;
+      deleteOnExit(): void;
+      deleteOnExitP(): Promise<void>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public boolean java.io.File.exists()
+      existsA(cb: Callback<object_t>): void;
+      exists(): object_t;
+      existsP(): Promise<object_t>;
+      // public java.io.File java.io.File.getAbsoluteFile()
+      getAbsoluteFileA(cb: Callback<Java.File>): void;
+      getAbsoluteFile(): Java.File;
+      getAbsoluteFileP(): Promise<Java.File>;
+      // public java.lang.String java.io.File.getAbsolutePath()
+      getAbsolutePathA(cb: Callback<string>): void;
+      getAbsolutePath(): string;
+      getAbsolutePathP(): Promise<string>;
+      // public java.io.File java.io.File.getCanonicalFile() throws java.io.IOException
+      getCanonicalFileA(cb: Callback<Java.File>): void;
+      getCanonicalFile(): Java.File;
+      getCanonicalFileP(): Promise<Java.File>;
+      // public java.lang.String java.io.File.getCanonicalPath() throws java.io.IOException
+      getCanonicalPathA(cb: Callback<string>): void;
+      getCanonicalPath(): string;
+      getCanonicalPathP(): Promise<string>;
+      // public final native java.lang.Class<?> java.lang.Object.getClass()
+      getClassA(cb: Callback<object_t>): void;
+      getClass(): object_t;
+      getClassP(): Promise<object_t>;
+      // public long java.io.File.getFreeSpace()
+      getFreeSpaceA(cb: Callback<object_t>): void;
+      getFreeSpace(): object_t;
+      getFreeSpaceP(): Promise<object_t>;
+      // public java.lang.String java.io.File.getName()
+      getNameA(cb: Callback<string>): void;
+      getName(): string;
+      getNameP(): Promise<string>;
+      // public java.lang.String java.io.File.getParent()
+      getParentA(cb: Callback<string>): void;
+      getParent(): string;
+      getParentP(): Promise<string>;
+      // public java.io.File java.io.File.getParentFile()
+      getParentFileA(cb: Callback<Java.File>): void;
+      getParentFile(): Java.File;
+      getParentFileP(): Promise<Java.File>;
+      // public java.lang.String java.io.File.getPath()
+      getPathA(cb: Callback<string>): void;
+      getPath(): string;
+      getPathP(): Promise<string>;
+      // public long java.io.File.getTotalSpace()
+      getTotalSpaceA(cb: Callback<object_t>): void;
+      getTotalSpace(): object_t;
+      getTotalSpaceP(): Promise<object_t>;
+      // public long java.io.File.getUsableSpace()
+      getUsableSpaceA(cb: Callback<object_t>): void;
+      getUsableSpace(): object_t;
+      getUsableSpaceP(): Promise<object_t>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public boolean java.io.File.isAbsolute()
+      isAbsoluteA(cb: Callback<object_t>): void;
+      isAbsolute(): object_t;
+      isAbsoluteP(): Promise<object_t>;
+      // public boolean java.io.File.isDirectory()
+      isDirectoryA(cb: Callback<object_t>): void;
+      isDirectory(): object_t;
+      isDirectoryP(): Promise<object_t>;
+      // public boolean java.io.File.isFile()
+      isFileA(cb: Callback<object_t>): void;
+      isFile(): object_t;
+      isFileP(): Promise<object_t>;
+      // public boolean java.io.File.isHidden()
+      isHiddenA(cb: Callback<object_t>): void;
+      isHidden(): object_t;
+      isHiddenP(): Promise<object_t>;
+      // public long java.io.File.lastModified()
+      lastModifiedA(cb: Callback<object_t>): void;
+      lastModified(): object_t;
+      lastModifiedP(): Promise<object_t>;
+      // public long java.io.File.length()
+      lengthA(cb: Callback<object_t>): void;
+      length(): object_t;
+      lengthP(): Promise<object_t>;
+      // public java.lang.String[] java.io.File.list(java.io.FilenameFilter)
+      listA(arg0: object_t, cb: Callback<string[]>): void;
+      list(arg0: object_t): string[];
+      listP(arg0: object_t): Promise<string[]>;
+      // public java.lang.String[] java.io.File.list()
+      listA(cb: Callback<string[]>): void;
+      list(): string[];
+      listP(): Promise<string[]>;
+      // public java.io.File[] java.io.File.listFiles(java.io.FilenameFilter)
+      listFilesA(arg0: object_t, cb: Callback<Java.File[]>): void;
+      listFiles(arg0: object_t): Java.File[];
+      listFilesP(arg0: object_t): Promise<Java.File[]>;
+      // public java.io.File[] java.io.File.listFiles(java.io.FileFilter)
+      listFilesA(arg0: object_t, cb: Callback<Java.File[]>): void;
+      listFiles(arg0: object_t): Java.File[];
+      listFilesP(arg0: object_t): Promise<Java.File[]>;
+      // public java.io.File[] java.io.File.listFiles()
+      listFilesA(cb: Callback<Java.File[]>): void;
+      listFiles(): Java.File[];
+      listFilesP(): Promise<Java.File[]>;
+      // public boolean java.io.File.mkdir()
+      mkdirA(cb: Callback<object_t>): void;
+      mkdir(): object_t;
+      mkdirP(): Promise<object_t>;
+      // public boolean java.io.File.mkdirs()
+      mkdirsA(cb: Callback<object_t>): void;
+      mkdirs(): object_t;
+      mkdirsP(): Promise<object_t>;
+      // public final native void java.lang.Object.notify()
+      notifyA(cb: Callback<void>): void;
+      notify(): void;
+      notifyP(): Promise<void>;
+      // public final native void java.lang.Object.notifyAll()
+      notifyAllA(cb: Callback<void>): void;
+      notifyAll(): void;
+      notifyAllP(): Promise<void>;
+      // public boolean java.io.File.renameTo(java.io.File)
+      renameToA(arg0: Java.File, cb: Callback<object_t>): void;
+      renameTo(arg0: Java.File): object_t;
+      renameToP(arg0: Java.File): Promise<object_t>;
+      // public boolean java.io.File.setExecutable(boolean,boolean)
+      setExecutableA(
+        arg0: object_t,
+        arg1: object_t,
+        cb: Callback<object_t>
+      ): void;
+      setExecutable(arg0: object_t, arg1: object_t): object_t;
+      setExecutableP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      // public boolean java.io.File.setExecutable(boolean)
+      setExecutableA(arg0: object_t, cb: Callback<object_t>): void;
+      setExecutable(arg0: object_t): object_t;
+      setExecutableP(arg0: object_t): Promise<object_t>;
+      // public boolean java.io.File.setLastModified(long)
+      setLastModifiedA(arg0: object_t, cb: Callback<object_t>): void;
+      setLastModified(arg0: object_t): object_t;
+      setLastModifiedP(arg0: object_t): Promise<object_t>;
+      // public boolean java.io.File.setReadable(boolean,boolean)
+      setReadableA(
+        arg0: object_t,
+        arg1: object_t,
+        cb: Callback<object_t>
+      ): void;
+      setReadable(arg0: object_t, arg1: object_t): object_t;
+      setReadableP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      // public boolean java.io.File.setReadable(boolean)
+      setReadableA(arg0: object_t, cb: Callback<object_t>): void;
+      setReadable(arg0: object_t): object_t;
+      setReadableP(arg0: object_t): Promise<object_t>;
+      // public boolean java.io.File.setReadOnly()
+      setReadOnlyA(cb: Callback<object_t>): void;
+      setReadOnly(): object_t;
+      setReadOnlyP(): Promise<object_t>;
+      // public boolean java.io.File.setWritable(boolean,boolean)
+      setWritableA(
+        arg0: object_t,
+        arg1: object_t,
+        cb: Callback<object_t>
+      ): void;
+      setWritable(arg0: object_t, arg1: object_t): object_t;
+      setWritableP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      // public boolean java.io.File.setWritable(boolean)
+      setWritableA(arg0: object_t, cb: Callback<object_t>): void;
+      setWritable(arg0: object_t): object_t;
+      setWritableP(arg0: object_t): Promise<object_t>;
+      // public java.nio.file.Path java.io.File.toPath()
+      toPathA(cb: Callback<object_t>): void;
+      toPath(): object_t;
+      toPathP(): Promise<object_t>;
+      // public java.lang.String java.lang.Object.toString()
+      toStringA(cb: Callback<string>): void;
+      toString(): string;
+      toStringP(): Promise<string>;
+      // public java.net.URI java.io.File.toURI()
+      toURIA(cb: Callback<object_t>): void;
+      toURI(): object_t;
+      toURIP(): Promise<object_t>;
+      // public java.net.URL java.io.File.toURL() throws java.net.MalformedURLException
+      toURLA(cb: Callback<object_t>): void;
+      toURL(): object_t;
+      toURLP(): Promise<object_t>;
+      // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+      waitA(arg0: object_t, cb: Callback<void>): void;
+      wait(arg0: object_t): void;
+      waitP(arg0: object_t): Promise<void>;
+      // public final void java.lang.Object.wait() throws java.lang.InterruptedException
+      waitA(cb: Callback<void>): void;
+      wait(): void;
+      waitP(): Promise<void>;
+    }
+    export module File {
+      export interface Static {
+        separatorChar: object_t;
+        separator: string;
+        pathSeparatorChar: object_t;
+        pathSeparator: string;
+        class: Java.Object;
+        new (arg0: string_t, arg1: string_t): java.io.File;
+        new (arg0: Java.File, arg1: string_t): java.io.File;
+        new (arg0: string_t): java.io.File;
+        new (arg0: object_t): java.io.File;
+        // public static java.io.File java.io.File.createTempFile(java.lang.String,java.lang.String,java.io.File) throws java.io.IOException
+        createTempFileA(
+          arg0: string_t,
+          arg1: string_t,
+          arg2: Java.File,
+          cb: Callback<Java.File>
+        ): void;
+        createTempFile(
+          arg0: string_t,
+          arg1: string_t,
+          arg2: Java.File
+        ): Java.File;
+        createTempFileP(
+          arg0: string_t,
+          arg1: string_t,
+          arg2: Java.File
+        ): Promise<Java.File>;
+        // public static java.io.File java.io.File.createTempFile(java.lang.String,java.lang.String) throws java.io.IOException
+        createTempFileA(
+          arg0: string_t,
+          arg1: string_t,
+          cb: Callback<Java.File>
+        ): void;
+        createTempFile(arg0: string_t, arg1: string_t): Java.File;
+        createTempFileP(arg0: string_t, arg1: string_t): Promise<Java.File>;
+        // public static java.io.File[] java.io.File.listRoots()
+        listRootsA(cb: Callback<Java.File[]>): void;
+        listRoots(): Java.File[];
+        listRootsP(): Promise<Java.File[]>;
+      }
+    }
+  }
+
+  export module java.lang {
+    export interface Integer extends Java.java.lang.Object {
+      // public byte java.lang.Integer.byteValue()
+      byteValueA(cb: Callback<object_t>): void;
+      byteValue(): object_t;
+      byteValueP(): Promise<object_t>;
+      // public int java.lang.Integer.compareTo(java.lang.Integer)
+      compareToA(arg0: integer_t, cb: Callback<number>): void;
+      compareTo(arg0: integer_t): number;
+      compareToP(arg0: integer_t): Promise<number>;
+      // public int java.lang.Integer.compareTo(java.lang.Object)
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
+      // public java.util.Optional<java.lang.Integer> java.lang.Integer.describeConstable()
+      describeConstableA(cb: Callback<object_t>): void;
+      describeConstable(): object_t;
+      describeConstableP(): Promise<object_t>;
+      // public double java.lang.Integer.doubleValue()
+      doubleValueA(cb: Callback<object_t>): void;
+      doubleValue(): object_t;
+      doubleValueP(): Promise<object_t>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public float java.lang.Integer.floatValue()
+      floatValueA(cb: Callback<object_t>): void;
+      floatValue(): object_t;
+      floatValueP(): Promise<object_t>;
+      // public final native java.lang.Class<?> java.lang.Object.getClass()
+      getClassA(cb: Callback<object_t>): void;
+      getClass(): object_t;
+      getClassP(): Promise<object_t>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public int java.lang.Integer.intValue()
+      intValueA(cb: Callback<number>): void;
+      intValue(): number;
+      intValueP(): Promise<number>;
+      // public long java.lang.Integer.longValue()
+      longValueA(cb: Callback<object_t>): void;
+      longValue(): object_t;
+      longValueP(): Promise<object_t>;
+      // public final native void java.lang.Object.notify()
+      notifyA(cb: Callback<void>): void;
+      notify(): void;
+      notifyP(): Promise<void>;
+      // public final native void java.lang.Object.notifyAll()
+      notifyAllA(cb: Callback<void>): void;
+      notifyAll(): void;
+      notifyAllP(): Promise<void>;
+      // public java.lang.Integer java.lang.Integer.resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)
+      resolveConstantDescA(arg0: object_t, cb: Callback<number>): void;
+      resolveConstantDesc(arg0: object_t): number;
+      resolveConstantDescP(arg0: object_t): Promise<number>;
+      // public java.lang.Object java.lang.Integer.resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup) throws java.lang.ReflectiveOperationException
+      resolveConstantDescA(arg0: object_t, cb: Callback<object_t>): void;
+      resolveConstantDesc(arg0: object_t): object_t;
+      resolveConstantDescP(arg0: object_t): Promise<object_t>;
+      // public short java.lang.Integer.shortValue()
+      shortValueA(cb: Callback<object_t>): void;
+      shortValue(): object_t;
+      shortValueP(): Promise<object_t>;
+      // public java.lang.String java.lang.Object.toString()
+      toStringA(cb: Callback<string>): void;
+      toString(): string;
+      toStringP(): Promise<string>;
+      // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+      waitA(arg0: object_t, cb: Callback<void>): void;
+      wait(arg0: object_t): void;
+      waitP(arg0: object_t): Promise<void>;
+      // public final void java.lang.Object.wait() throws java.lang.InterruptedException
+      waitA(cb: Callback<void>): void;
+      wait(): void;
+      waitP(): Promise<void>;
+    }
+    export module Integer {
+      export interface Static {
+        MIN_VALUE: number;
+        MAX_VALUE: number;
+        TYPE: object_t;
+        SIZE: number;
+        BYTES: number;
+        class: Java.Object;
+        new (arg0: string_t): java.lang.Integer;
+        new (arg0: integer_t): java.lang.Integer;
+        // public static int java.lang.Integer.bitCount(int)
+        bitCountA(arg0: integer_t, cb: Callback<number>): void;
+        bitCount(arg0: integer_t): number;
+        bitCountP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.compare(int,int)
+        compareA(arg0: integer_t, arg1: integer_t, cb: Callback<number>): void;
+        compare(arg0: integer_t, arg1: integer_t): number;
+        compareP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.compareUnsigned(int,int)
+        compareUnsignedA(
+          arg0: integer_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        compareUnsigned(arg0: integer_t, arg1: integer_t): number;
+        compareUnsignedP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static java.lang.Integer java.lang.Integer.decode(java.lang.String) throws java.lang.NumberFormatException
+        decodeA(arg0: string_t, cb: Callback<number>): void;
+        decode(arg0: string_t): number;
+        decodeP(arg0: string_t): Promise<number>;
+        // public static int java.lang.Integer.divideUnsigned(int,int)
+        divideUnsignedA(
+          arg0: integer_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        divideUnsigned(arg0: integer_t, arg1: integer_t): number;
+        divideUnsignedP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,java.lang.Integer)
+        getIntegerA(
+          arg0: string_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        getInteger(arg0: string_t, arg1: integer_t): number;
+        getIntegerP(arg0: string_t, arg1: integer_t): Promise<number>;
+        // public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,int)
+        getIntegerA(
+          arg0: string_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        getInteger(arg0: string_t, arg1: integer_t): number;
+        getIntegerP(arg0: string_t, arg1: integer_t): Promise<number>;
+        // public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String)
+        getIntegerA(arg0: string_t, cb: Callback<number>): void;
+        getInteger(arg0: string_t): number;
+        getIntegerP(arg0: string_t): Promise<number>;
+        // public static int java.lang.Integer.hashCode(int)
+        hashCodeA(arg0: integer_t, cb: Callback<number>): void;
+        hashCode(arg0: integer_t): number;
+        hashCodeP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.highestOneBit(int)
+        highestOneBitA(arg0: integer_t, cb: Callback<number>): void;
+        highestOneBit(arg0: integer_t): number;
+        highestOneBitP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.lowestOneBit(int)
+        lowestOneBitA(arg0: integer_t, cb: Callback<number>): void;
+        lowestOneBit(arg0: integer_t): number;
+        lowestOneBitP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.max(int,int)
+        maxA(arg0: integer_t, arg1: integer_t, cb: Callback<number>): void;
+        max(arg0: integer_t, arg1: integer_t): number;
+        maxP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.min(int,int)
+        minA(arg0: integer_t, arg1: integer_t, cb: Callback<number>): void;
+        min(arg0: integer_t, arg1: integer_t): number;
+        minP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.numberOfLeadingZeros(int)
+        numberOfLeadingZerosA(arg0: integer_t, cb: Callback<number>): void;
+        numberOfLeadingZeros(arg0: integer_t): number;
+        numberOfLeadingZerosP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.numberOfTrailingZeros(int)
+        numberOfTrailingZerosA(arg0: integer_t, cb: Callback<number>): void;
+        numberOfTrailingZeros(arg0: integer_t): number;
+        numberOfTrailingZerosP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.parseInt(java.lang.CharSequence,int,int,int) throws java.lang.NumberFormatException
+        parseIntA(
+          arg0: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t,
+          cb: Callback<number>
+        ): void;
+        parseInt(
+          arg0: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t
+        ): number;
+        parseIntP(
+          arg0: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t
+        ): Promise<number>;
+        // public static int java.lang.Integer.parseInt(java.lang.String,int) throws java.lang.NumberFormatException
+        parseIntA(arg0: string_t, arg1: integer_t, cb: Callback<number>): void;
+        parseInt(arg0: string_t, arg1: integer_t): number;
+        parseIntP(arg0: string_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.parseInt(java.lang.String) throws java.lang.NumberFormatException
+        parseIntA(arg0: string_t, cb: Callback<number>): void;
+        parseInt(arg0: string_t): number;
+        parseIntP(arg0: string_t): Promise<number>;
+        // public static int java.lang.Integer.parseUnsignedInt(java.lang.CharSequence,int,int,int) throws java.lang.NumberFormatException
+        parseUnsignedIntA(
+          arg0: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t,
+          cb: Callback<number>
+        ): void;
+        parseUnsignedInt(
+          arg0: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t
+        ): number;
+        parseUnsignedIntP(
+          arg0: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t
+        ): Promise<number>;
+        // public static int java.lang.Integer.parseUnsignedInt(java.lang.String,int) throws java.lang.NumberFormatException
+        parseUnsignedIntA(
+          arg0: string_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        parseUnsignedInt(arg0: string_t, arg1: integer_t): number;
+        parseUnsignedIntP(arg0: string_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.parseUnsignedInt(java.lang.String) throws java.lang.NumberFormatException
+        parseUnsignedIntA(arg0: string_t, cb: Callback<number>): void;
+        parseUnsignedInt(arg0: string_t): number;
+        parseUnsignedIntP(arg0: string_t): Promise<number>;
+        // public static int java.lang.Integer.remainderUnsigned(int,int)
+        remainderUnsignedA(
+          arg0: integer_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        remainderUnsigned(arg0: integer_t, arg1: integer_t): number;
+        remainderUnsignedP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.reverse(int)
+        reverseA(arg0: integer_t, cb: Callback<number>): void;
+        reverse(arg0: integer_t): number;
+        reverseP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.reverseBytes(int)
+        reverseBytesA(arg0: integer_t, cb: Callback<number>): void;
+        reverseBytes(arg0: integer_t): number;
+        reverseBytesP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.rotateLeft(int,int)
+        rotateLeftA(
+          arg0: integer_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        rotateLeft(arg0: integer_t, arg1: integer_t): number;
+        rotateLeftP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.rotateRight(int,int)
+        rotateRightA(
+          arg0: integer_t,
+          arg1: integer_t,
+          cb: Callback<number>
+        ): void;
+        rotateRight(arg0: integer_t, arg1: integer_t): number;
+        rotateRightP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static int java.lang.Integer.signum(int)
+        signumA(arg0: integer_t, cb: Callback<number>): void;
+        signum(arg0: integer_t): number;
+        signumP(arg0: integer_t): Promise<number>;
+        // public static int java.lang.Integer.sum(int,int)
+        sumA(arg0: integer_t, arg1: integer_t, cb: Callback<number>): void;
+        sum(arg0: integer_t, arg1: integer_t): number;
+        sumP(arg0: integer_t, arg1: integer_t): Promise<number>;
+        // public static java.lang.String java.lang.Integer.toBinaryString(int)
+        toBinaryStringA(arg0: integer_t, cb: Callback<string>): void;
+        toBinaryString(arg0: integer_t): string;
+        toBinaryStringP(arg0: integer_t): Promise<string>;
+        // public static java.lang.String java.lang.Integer.toHexString(int)
+        toHexStringA(arg0: integer_t, cb: Callback<string>): void;
+        toHexString(arg0: integer_t): string;
+        toHexStringP(arg0: integer_t): Promise<string>;
+        // public static java.lang.String java.lang.Integer.toOctalString(int)
+        toOctalStringA(arg0: integer_t, cb: Callback<string>): void;
+        toOctalString(arg0: integer_t): string;
+        toOctalStringP(arg0: integer_t): Promise<string>;
+        // public static java.lang.String java.lang.Integer.toString(int,int)
+        toStringA(arg0: integer_t, arg1: integer_t, cb: Callback<string>): void;
+        toString(arg0: integer_t, arg1: integer_t): string;
+        toStringP(arg0: integer_t, arg1: integer_t): Promise<string>;
+        // public static java.lang.String java.lang.Integer.toString(int)
+        toStringA(arg0: integer_t, cb: Callback<string>): void;
+        toString(arg0: integer_t): string;
+        toStringP(arg0: integer_t): Promise<string>;
+        // public static long java.lang.Integer.toUnsignedLong(int)
+        toUnsignedLongA(arg0: integer_t, cb: Callback<object_t>): void;
+        toUnsignedLong(arg0: integer_t): object_t;
+        toUnsignedLongP(arg0: integer_t): Promise<object_t>;
+        // public static java.lang.String java.lang.Integer.toUnsignedString(int,int)
+        toUnsignedStringA(
+          arg0: integer_t,
+          arg1: integer_t,
+          cb: Callback<string>
+        ): void;
+        toUnsignedString(arg0: integer_t, arg1: integer_t): string;
+        toUnsignedStringP(arg0: integer_t, arg1: integer_t): Promise<string>;
+        // public static java.lang.String java.lang.Integer.toUnsignedString(int)
+        toUnsignedStringA(arg0: integer_t, cb: Callback<string>): void;
+        toUnsignedString(arg0: integer_t): string;
+        toUnsignedStringP(arg0: integer_t): Promise<string>;
+        // public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String,int) throws java.lang.NumberFormatException
+        valueOfA(arg0: string_t, arg1: integer_t, cb: Callback<number>): void;
+        valueOf(arg0: string_t, arg1: integer_t): number;
+        valueOfP(arg0: string_t, arg1: integer_t): Promise<number>;
+        // public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String) throws java.lang.NumberFormatException
+        valueOfA(arg0: string_t, cb: Callback<number>): void;
+        valueOf(arg0: string_t): number;
+        valueOfP(arg0: string_t): Promise<number>;
+        // public static java.lang.Integer java.lang.Integer.valueOf(int)
+        valueOfA(arg0: integer_t, cb: Callback<number>): void;
+        valueOf(arg0: integer_t): number;
+        valueOfP(arg0: integer_t): Promise<number>;
+      }
+    }
+  }
+
   export module java.lang {
     export interface Object {
       // public boolean java.lang.Object.equals(java.lang.Object)
@@ -5360,9 +6543,9 @@ export module Java {
       getClass(): object_t;
       getClassP(): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public final native void java.lang.Object.notify()
       notifyA(cb: Callback<void>): void;
       notify(): void;
@@ -5376,9 +6559,9 @@ export module Java {
       toString(): string;
       toStringP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -5396,48 +6579,259 @@ export module Java {
     }
   }
 
+  export module java.lang.reflect {
+    export interface Field extends Java.java.lang.Object {
+      // public final boolean java.lang.reflect.AccessibleObject.canAccess(java.lang.Object)
+      canAccessA(arg0: object_t, cb: Callback<object_t>): void;
+      canAccess(arg0: object_t): object_t;
+      canAccessP(arg0: object_t): Promise<object_t>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public java.lang.Object java.lang.reflect.Field.get(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getA(arg0: object_t, cb: Callback<object_t>): void;
+      get(arg0: object_t): object_t;
+      getP(arg0: object_t): Promise<object_t>;
+      // public java.lang.reflect.AnnotatedType java.lang.reflect.Field.getAnnotatedType()
+      getAnnotatedTypeA(cb: Callback<object_t>): void;
+      getAnnotatedType(): object_t;
+      getAnnotatedTypeP(): Promise<object_t>;
+      // public <T extends java.lang.annotation.Annotation> T java.lang.reflect.Field.getAnnotation(java.lang.Class<T>)
+      getAnnotationA(arg0: object_t, cb: Callback<object_t>): void;
+      getAnnotation(arg0: object_t): object_t;
+      getAnnotationP(arg0: object_t): Promise<object_t>;
+      // public java.lang.annotation.Annotation[] java.lang.reflect.AccessibleObject.getAnnotations()
+      getAnnotationsA(cb: Callback<object_t[]>): void;
+      getAnnotations(): object_t[];
+      getAnnotationsP(): Promise<object_t[]>;
+      // public <T extends java.lang.annotation.Annotation> T[] java.lang.reflect.Field.getAnnotationsByType(java.lang.Class<T>)
+      getAnnotationsByTypeA(arg0: object_t, cb: Callback<object_t[]>): void;
+      getAnnotationsByType(arg0: object_t): object_t[];
+      getAnnotationsByTypeP(arg0: object_t): Promise<object_t[]>;
+      // public boolean java.lang.reflect.Field.getBoolean(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getBooleanA(arg0: object_t, cb: Callback<object_t>): void;
+      getBoolean(arg0: object_t): object_t;
+      getBooleanP(arg0: object_t): Promise<object_t>;
+      // public byte java.lang.reflect.Field.getByte(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getByteA(arg0: object_t, cb: Callback<object_t>): void;
+      getByte(arg0: object_t): object_t;
+      getByteP(arg0: object_t): Promise<object_t>;
+      // public char java.lang.reflect.Field.getChar(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getCharA(arg0: object_t, cb: Callback<object_t>): void;
+      getChar(arg0: object_t): object_t;
+      getCharP(arg0: object_t): Promise<object_t>;
+      // public final native java.lang.Class<?> java.lang.Object.getClass()
+      getClassA(cb: Callback<object_t>): void;
+      getClass(): object_t;
+      getClassP(): Promise<object_t>;
+      // public <T extends java.lang.annotation.Annotation> T java.lang.reflect.AccessibleObject.getDeclaredAnnotation(java.lang.Class<T>)
+      getDeclaredAnnotationA(arg0: object_t, cb: Callback<object_t>): void;
+      getDeclaredAnnotation(arg0: object_t): object_t;
+      getDeclaredAnnotationP(arg0: object_t): Promise<object_t>;
+      // public java.lang.annotation.Annotation[] java.lang.reflect.Field.getDeclaredAnnotations()
+      getDeclaredAnnotationsA(cb: Callback<object_t[]>): void;
+      getDeclaredAnnotations(): object_t[];
+      getDeclaredAnnotationsP(): Promise<object_t[]>;
+      // public <T extends java.lang.annotation.Annotation> T[] java.lang.reflect.AccessibleObject.getDeclaredAnnotationsByType(java.lang.Class<T>)
+      getDeclaredAnnotationsByTypeA(
+        arg0: object_t,
+        cb: Callback<object_t[]>
+      ): void;
+      getDeclaredAnnotationsByType(arg0: object_t): object_t[];
+      getDeclaredAnnotationsByTypeP(arg0: object_t): Promise<object_t[]>;
+      // public java.lang.Class<?> java.lang.reflect.Field.getDeclaringClass()
+      getDeclaringClassA(cb: Callback<object_t>): void;
+      getDeclaringClass(): object_t;
+      getDeclaringClassP(): Promise<object_t>;
+      // public double java.lang.reflect.Field.getDouble(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getDoubleA(arg0: object_t, cb: Callback<object_t>): void;
+      getDouble(arg0: object_t): object_t;
+      getDoubleP(arg0: object_t): Promise<object_t>;
+      // public float java.lang.reflect.Field.getFloat(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getFloatA(arg0: object_t, cb: Callback<object_t>): void;
+      getFloat(arg0: object_t): object_t;
+      getFloatP(arg0: object_t): Promise<object_t>;
+      // public java.lang.reflect.Type java.lang.reflect.Field.getGenericType()
+      getGenericTypeA(cb: Callback<object_t>): void;
+      getGenericType(): object_t;
+      getGenericTypeP(): Promise<object_t>;
+      // public int java.lang.reflect.Field.getInt(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getIntA(arg0: object_t, cb: Callback<number>): void;
+      getInt(arg0: object_t): number;
+      getIntP(arg0: object_t): Promise<number>;
+      // public long java.lang.reflect.Field.getLong(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getLongA(arg0: object_t, cb: Callback<object_t>): void;
+      getLong(arg0: object_t): object_t;
+      getLongP(arg0: object_t): Promise<object_t>;
+      // public int java.lang.reflect.Field.getModifiers()
+      getModifiersA(cb: Callback<number>): void;
+      getModifiers(): number;
+      getModifiersP(): Promise<number>;
+      // public java.lang.String java.lang.reflect.Field.getName()
+      getNameA(cb: Callback<string>): void;
+      getName(): string;
+      getNameP(): Promise<string>;
+      // public short java.lang.reflect.Field.getShort(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      getShortA(arg0: object_t, cb: Callback<object_t>): void;
+      getShort(arg0: object_t): object_t;
+      getShortP(arg0: object_t): Promise<object_t>;
+      // public java.lang.Class<?> java.lang.reflect.Field.getType()
+      getTypeA(cb: Callback<object_t>): void;
+      getType(): object_t;
+      getTypeP(): Promise<object_t>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public boolean java.lang.reflect.AccessibleObject.isAccessible()
+      isAccessibleA(cb: Callback<object_t>): void;
+      isAccessible(): object_t;
+      isAccessibleP(): Promise<object_t>;
+      // public boolean java.lang.reflect.AccessibleObject.isAnnotationPresent(java.lang.Class<? extends java.lang.annotation.Annotation>)
+      isAnnotationPresentA(arg0: object_t, cb: Callback<object_t>): void;
+      isAnnotationPresent(arg0: object_t): object_t;
+      isAnnotationPresentP(arg0: object_t): Promise<object_t>;
+      // public boolean java.lang.reflect.Field.isEnumConstant()
+      isEnumConstantA(cb: Callback<object_t>): void;
+      isEnumConstant(): object_t;
+      isEnumConstantP(): Promise<object_t>;
+      // public boolean java.lang.reflect.Field.isSynthetic()
+      isSyntheticA(cb: Callback<object_t>): void;
+      isSynthetic(): object_t;
+      isSyntheticP(): Promise<object_t>;
+      // public final native void java.lang.Object.notify()
+      notifyA(cb: Callback<void>): void;
+      notify(): void;
+      notifyP(): Promise<void>;
+      // public final native void java.lang.Object.notifyAll()
+      notifyAllA(cb: Callback<void>): void;
+      notifyAll(): void;
+      notifyAllP(): Promise<void>;
+      // public void java.lang.reflect.Field.set(java.lang.Object,java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      set(arg0: object_t, arg1: object_t): void;
+      setP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setAccessible(boolean)
+      setAccessibleA(arg0: object_t, cb: Callback<void>): void;
+      setAccessible(arg0: object_t): void;
+      setAccessibleP(arg0: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setBoolean(java.lang.Object,boolean) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setBooleanA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setBoolean(arg0: object_t, arg1: object_t): void;
+      setBooleanP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setByte(java.lang.Object,byte) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setByteA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setByte(arg0: object_t, arg1: object_t): void;
+      setByteP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setChar(java.lang.Object,char) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setCharA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setChar(arg0: object_t, arg1: object_t): void;
+      setCharP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setDouble(java.lang.Object,double) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setDoubleA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setDouble(arg0: object_t, arg1: object_t): void;
+      setDoubleP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setFloat(java.lang.Object,float) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setFloatA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setFloat(arg0: object_t, arg1: object_t): void;
+      setFloatP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setInt(java.lang.Object,int) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setIntA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      setInt(arg0: object_t, arg1: integer_t): void;
+      setIntP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public void java.lang.reflect.Field.setLong(java.lang.Object,long) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setLongA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setLong(arg0: object_t, arg1: object_t): void;
+      setLongP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public void java.lang.reflect.Field.setShort(java.lang.Object,short) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+      setShortA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
+      setShort(arg0: object_t, arg1: object_t): void;
+      setShortP(arg0: object_t, arg1: object_t): Promise<void>;
+      // public java.lang.String java.lang.reflect.Field.toGenericString()
+      toGenericStringA(cb: Callback<string>): void;
+      toGenericString(): string;
+      toGenericStringP(): Promise<string>;
+      // public java.lang.String java.lang.Object.toString()
+      toStringA(cb: Callback<string>): void;
+      toString(): string;
+      toStringP(): Promise<string>;
+      // public final boolean java.lang.reflect.AccessibleObject.trySetAccessible()
+      trySetAccessibleA(cb: Callback<object_t>): void;
+      trySetAccessible(): object_t;
+      trySetAccessibleP(): Promise<object_t>;
+      // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+      waitA(arg0: object_t, cb: Callback<void>): void;
+      wait(arg0: object_t): void;
+      waitP(arg0: object_t): Promise<void>;
+      // public final void java.lang.Object.wait() throws java.lang.InterruptedException
+      waitA(cb: Callback<void>): void;
+      wait(): void;
+      waitP(): Promise<void>;
+    }
+    export module Field {
+      export interface Static {
+        PUBLIC: number;
+        DECLARED: number;
+        class: Java.Object;
+        // public static void java.lang.reflect.AccessibleObject.setAccessible(java.lang.reflect.AccessibleObject[],boolean)
+        setAccessibleA(
+          arg0: object_array_t,
+          arg1: object_t,
+          cb: Callback<void>
+        ): void;
+        setAccessible(arg0: object_array_t, arg1: object_t): void;
+        setAccessibleP(arg0: object_array_t, arg1: object_t): Promise<void>;
+      }
+    }
+  }
+
   export module java.lang {
     export interface String extends Java.java.lang.Object {
       // public char java.lang.String.charAt(int)
-      charAtA(arg0: object_t, cb: Callback<object_t>): void;
-      charAt(arg0: object_t): object_t;
-      charAtP(arg0: object_t): Promise<object_t>;
+      charAtA(arg0: integer_t, cb: Callback<object_t>): void;
+      charAt(arg0: integer_t): object_t;
+      charAtP(arg0: integer_t): Promise<object_t>;
       // public java.util.stream.IntStream java.lang.String.chars()
       charsA(cb: Callback<object_t>): void;
       chars(): object_t;
       charsP(): Promise<object_t>;
       // public int java.lang.String.codePointAt(int)
-      codePointAtA(arg0: object_t, cb: Callback<object_t>): void;
-      codePointAt(arg0: object_t): object_t;
-      codePointAtP(arg0: object_t): Promise<object_t>;
+      codePointAtA(arg0: integer_t, cb: Callback<number>): void;
+      codePointAt(arg0: integer_t): number;
+      codePointAtP(arg0: integer_t): Promise<number>;
       // public int java.lang.String.codePointBefore(int)
-      codePointBeforeA(arg0: object_t, cb: Callback<object_t>): void;
-      codePointBefore(arg0: object_t): object_t;
-      codePointBeforeP(arg0: object_t): Promise<object_t>;
+      codePointBeforeA(arg0: integer_t, cb: Callback<number>): void;
+      codePointBefore(arg0: integer_t): number;
+      codePointBeforeP(arg0: integer_t): Promise<number>;
       // public int java.lang.String.codePointCount(int,int)
       codePointCountA(
-        arg0: object_t,
-        arg1: object_t,
-        cb: Callback<object_t>
+        arg0: integer_t,
+        arg1: integer_t,
+        cb: Callback<number>
       ): void;
-      codePointCount(arg0: object_t, arg1: object_t): object_t;
-      codePointCountP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      codePointCount(arg0: integer_t, arg1: integer_t): number;
+      codePointCountP(arg0: integer_t, arg1: integer_t): Promise<number>;
       // public java.util.stream.IntStream java.lang.String.codePoints()
       codePointsA(cb: Callback<object_t>): void;
       codePoints(): object_t;
       codePointsP(): Promise<object_t>;
       // public int java.lang.String.compareTo(java.lang.String)
-      compareToA(arg0: string_t, cb: Callback<object_t>): void;
-      compareTo(arg0: string_t): object_t;
-      compareToP(arg0: string_t): Promise<object_t>;
+      compareToA(arg0: string_t, cb: Callback<number>): void;
+      compareTo(arg0: string_t): number;
+      compareToP(arg0: string_t): Promise<number>;
       // public int java.lang.String.compareTo(java.lang.Object)
-      compareToA(arg0: object_t, cb: Callback<object_t>): void;
-      compareTo(arg0: object_t): object_t;
-      compareToP(arg0: object_t): Promise<object_t>;
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
       // public int java.lang.String.compareToIgnoreCase(java.lang.String)
-      compareToIgnoreCaseA(arg0: string_t, cb: Callback<object_t>): void;
-      compareToIgnoreCase(arg0: string_t): object_t;
-      compareToIgnoreCaseP(arg0: string_t): Promise<object_t>;
+      compareToIgnoreCaseA(arg0: string_t, cb: Callback<number>): void;
+      compareToIgnoreCase(arg0: string_t): number;
+      compareToIgnoreCaseP(arg0: string_t): Promise<number>;
       // public java.lang.String java.lang.String.concat(java.lang.String)
       concatA(arg0: string_t, cb: Callback<string>): void;
       concat(arg0: string_t): string;
@@ -5478,23 +6872,23 @@ export module Java {
       formattedP(arg0: object_array_t): Promise<string>;
       // public void java.lang.String.getBytes(int,int,byte[],int)
       getBytesA(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         arg2: object_array_t,
-        arg3: object_t,
+        arg3: integer_t,
         cb: Callback<void>
       ): void;
       getBytes(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         arg2: object_array_t,
-        arg3: object_t
+        arg3: integer_t
       ): void;
       getBytesP(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         arg2: object_array_t,
-        arg3: object_t
+        arg3: integer_t
       ): Promise<void>;
       // public byte[] java.lang.String.getBytes(java.nio.charset.Charset)
       getBytesA(arg0: object_t, cb: Callback<object_t[]>): void;
@@ -5510,52 +6904,52 @@ export module Java {
       getBytesP(): Promise<object_t[]>;
       // public void java.lang.String.getChars(int,int,char[],int)
       getCharsA(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         arg2: object_array_t,
-        arg3: object_t,
+        arg3: integer_t,
         cb: Callback<void>
       ): void;
       getChars(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         arg2: object_array_t,
-        arg3: object_t
+        arg3: integer_t
       ): void;
       getCharsP(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         arg2: object_array_t,
-        arg3: object_t
+        arg3: integer_t
       ): Promise<void>;
       // public final native java.lang.Class<?> java.lang.Object.getClass()
       getClassA(cb: Callback<object_t>): void;
       getClass(): object_t;
       getClassP(): Promise<object_t>;
       // public native int java.lang.Object.hashCode()
-      hashCodeA(cb: Callback<object_t>): void;
-      hashCode(): object_t;
-      hashCodeP(): Promise<object_t>;
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
       // public java.lang.String java.lang.String.indent(int)
-      indentA(arg0: object_t, cb: Callback<string>): void;
-      indent(arg0: object_t): string;
-      indentP(arg0: object_t): Promise<string>;
+      indentA(arg0: integer_t, cb: Callback<string>): void;
+      indent(arg0: integer_t): string;
+      indentP(arg0: integer_t): Promise<string>;
       // public int java.lang.String.indexOf(java.lang.String,int)
-      indexOfA(arg0: string_t, arg1: object_t, cb: Callback<object_t>): void;
-      indexOf(arg0: string_t, arg1: object_t): object_t;
-      indexOfP(arg0: string_t, arg1: object_t): Promise<object_t>;
+      indexOfA(arg0: string_t, arg1: integer_t, cb: Callback<number>): void;
+      indexOf(arg0: string_t, arg1: integer_t): number;
+      indexOfP(arg0: string_t, arg1: integer_t): Promise<number>;
       // public int java.lang.String.indexOf(int,int)
-      indexOfA(arg0: object_t, arg1: object_t, cb: Callback<object_t>): void;
-      indexOf(arg0: object_t, arg1: object_t): object_t;
-      indexOfP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      indexOfA(arg0: integer_t, arg1: integer_t, cb: Callback<number>): void;
+      indexOf(arg0: integer_t, arg1: integer_t): number;
+      indexOfP(arg0: integer_t, arg1: integer_t): Promise<number>;
       // public int java.lang.String.indexOf(java.lang.String)
-      indexOfA(arg0: string_t, cb: Callback<object_t>): void;
-      indexOf(arg0: string_t): object_t;
-      indexOfP(arg0: string_t): Promise<object_t>;
+      indexOfA(arg0: string_t, cb: Callback<number>): void;
+      indexOf(arg0: string_t): number;
+      indexOfP(arg0: string_t): Promise<number>;
       // public int java.lang.String.indexOf(int)
-      indexOfA(arg0: object_t, cb: Callback<object_t>): void;
-      indexOf(arg0: object_t): object_t;
-      indexOfP(arg0: object_t): Promise<object_t>;
+      indexOfA(arg0: integer_t, cb: Callback<number>): void;
+      indexOf(arg0: integer_t): number;
+      indexOfP(arg0: integer_t): Promise<number>;
       // public native java.lang.String java.lang.String.intern()
       internA(cb: Callback<string>): void;
       intern(): string;
@@ -5569,33 +6963,29 @@ export module Java {
       isEmpty(): object_t;
       isEmptyP(): Promise<object_t>;
       // public int java.lang.String.lastIndexOf(java.lang.String,int)
-      lastIndexOfA(
-        arg0: string_t,
-        arg1: object_t,
-        cb: Callback<object_t>
-      ): void;
-      lastIndexOf(arg0: string_t, arg1: object_t): object_t;
-      lastIndexOfP(arg0: string_t, arg1: object_t): Promise<object_t>;
+      lastIndexOfA(arg0: string_t, arg1: integer_t, cb: Callback<number>): void;
+      lastIndexOf(arg0: string_t, arg1: integer_t): number;
+      lastIndexOfP(arg0: string_t, arg1: integer_t): Promise<number>;
       // public int java.lang.String.lastIndexOf(int,int)
       lastIndexOfA(
-        arg0: object_t,
-        arg1: object_t,
-        cb: Callback<object_t>
+        arg0: integer_t,
+        arg1: integer_t,
+        cb: Callback<number>
       ): void;
-      lastIndexOf(arg0: object_t, arg1: object_t): object_t;
-      lastIndexOfP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      lastIndexOf(arg0: integer_t, arg1: integer_t): number;
+      lastIndexOfP(arg0: integer_t, arg1: integer_t): Promise<number>;
       // public int java.lang.String.lastIndexOf(java.lang.String)
-      lastIndexOfA(arg0: string_t, cb: Callback<object_t>): void;
-      lastIndexOf(arg0: string_t): object_t;
-      lastIndexOfP(arg0: string_t): Promise<object_t>;
+      lastIndexOfA(arg0: string_t, cb: Callback<number>): void;
+      lastIndexOf(arg0: string_t): number;
+      lastIndexOfP(arg0: string_t): Promise<number>;
       // public int java.lang.String.lastIndexOf(int)
-      lastIndexOfA(arg0: object_t, cb: Callback<object_t>): void;
-      lastIndexOf(arg0: object_t): object_t;
-      lastIndexOfP(arg0: object_t): Promise<object_t>;
+      lastIndexOfA(arg0: integer_t, cb: Callback<number>): void;
+      lastIndexOf(arg0: integer_t): number;
+      lastIndexOfP(arg0: integer_t): Promise<number>;
       // public int java.lang.String.length()
-      lengthA(cb: Callback<object_t>): void;
-      length(): object_t;
-      lengthP(): Promise<object_t>;
+      lengthA(cb: Callback<number>): void;
+      length(): number;
+      lengthP(): Promise<number>;
       // public java.util.stream.Stream<java.lang.String> java.lang.String.lines()
       linesA(cb: Callback<object_t>): void;
       lines(): object_t;
@@ -5614,59 +7004,59 @@ export module Java {
       notifyAllP(): Promise<void>;
       // public int java.lang.String.offsetByCodePoints(int,int)
       offsetByCodePointsA(
-        arg0: object_t,
-        arg1: object_t,
-        cb: Callback<object_t>
+        arg0: integer_t,
+        arg1: integer_t,
+        cb: Callback<number>
       ): void;
-      offsetByCodePoints(arg0: object_t, arg1: object_t): object_t;
-      offsetByCodePointsP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      offsetByCodePoints(arg0: integer_t, arg1: integer_t): number;
+      offsetByCodePointsP(arg0: integer_t, arg1: integer_t): Promise<number>;
       // public boolean java.lang.String.regionMatches(boolean,int,java.lang.String,int,int)
       regionMatchesA(
         arg0: object_t,
-        arg1: object_t,
+        arg1: integer_t,
         arg2: string_t,
-        arg3: object_t,
-        arg4: object_t,
+        arg3: integer_t,
+        arg4: integer_t,
         cb: Callback<object_t>
       ): void;
       regionMatches(
         arg0: object_t,
-        arg1: object_t,
+        arg1: integer_t,
         arg2: string_t,
-        arg3: object_t,
-        arg4: object_t
+        arg3: integer_t,
+        arg4: integer_t
       ): object_t;
       regionMatchesP(
         arg0: object_t,
-        arg1: object_t,
+        arg1: integer_t,
         arg2: string_t,
-        arg3: object_t,
-        arg4: object_t
+        arg3: integer_t,
+        arg4: integer_t
       ): Promise<object_t>;
       // public boolean java.lang.String.regionMatches(int,java.lang.String,int,int)
       regionMatchesA(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: string_t,
-        arg2: object_t,
-        arg3: object_t,
+        arg2: integer_t,
+        arg3: integer_t,
         cb: Callback<object_t>
       ): void;
       regionMatches(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: string_t,
-        arg2: object_t,
-        arg3: object_t
+        arg2: integer_t,
+        arg3: integer_t
       ): object_t;
       regionMatchesP(
-        arg0: object_t,
+        arg0: integer_t,
         arg1: string_t,
-        arg2: object_t,
-        arg3: object_t
+        arg2: integer_t,
+        arg3: integer_t
       ): Promise<object_t>;
       // public java.lang.String java.lang.String.repeat(int)
-      repeatA(arg0: object_t, cb: Callback<string>): void;
-      repeat(arg0: object_t): string;
-      repeatP(arg0: object_t): Promise<string>;
+      repeatA(arg0: integer_t, cb: Callback<string>): void;
+      repeat(arg0: integer_t): string;
+      repeatP(arg0: integer_t): Promise<string>;
       // public java.lang.String java.lang.String.replace(java.lang.CharSequence,java.lang.CharSequence)
       replaceA(arg0: object_t, arg1: object_t, cb: Callback<string>): void;
       replace(arg0: object_t, arg1: object_t): string;
@@ -5692,17 +7082,21 @@ export module Java {
       resolveConstantDesc(arg0: object_t): object_t;
       resolveConstantDescP(arg0: object_t): Promise<object_t>;
       // public java.lang.String[] java.lang.String.split(java.lang.String,int)
-      splitA(arg0: string_t, arg1: object_t, cb: Callback<string[]>): void;
-      split(arg0: string_t, arg1: object_t): string[];
-      splitP(arg0: string_t, arg1: object_t): Promise<string[]>;
+      splitA(arg0: string_t, arg1: integer_t, cb: Callback<string[]>): void;
+      split(arg0: string_t, arg1: integer_t): string[];
+      splitP(arg0: string_t, arg1: integer_t): Promise<string[]>;
       // public java.lang.String[] java.lang.String.split(java.lang.String)
       splitA(arg0: string_t, cb: Callback<string[]>): void;
       split(arg0: string_t): string[];
       splitP(arg0: string_t): Promise<string[]>;
       // public boolean java.lang.String.startsWith(java.lang.String,int)
-      startsWithA(arg0: string_t, arg1: object_t, cb: Callback<object_t>): void;
-      startsWith(arg0: string_t, arg1: object_t): object_t;
-      startsWithP(arg0: string_t, arg1: object_t): Promise<object_t>;
+      startsWithA(
+        arg0: string_t,
+        arg1: integer_t,
+        cb: Callback<object_t>
+      ): void;
+      startsWith(arg0: string_t, arg1: integer_t): object_t;
+      startsWithP(arg0: string_t, arg1: integer_t): Promise<object_t>;
       // public boolean java.lang.String.startsWith(java.lang.String)
       startsWithA(arg0: string_t, cb: Callback<object_t>): void;
       startsWith(arg0: string_t): object_t;
@@ -5725,20 +7119,20 @@ export module Java {
       stripTrailingP(): Promise<string>;
       // public java.lang.CharSequence java.lang.String.subSequence(int,int)
       subSequenceA(
-        arg0: object_t,
-        arg1: object_t,
+        arg0: integer_t,
+        arg1: integer_t,
         cb: Callback<object_t>
       ): void;
-      subSequence(arg0: object_t, arg1: object_t): object_t;
-      subSequenceP(arg0: object_t, arg1: object_t): Promise<object_t>;
+      subSequence(arg0: integer_t, arg1: integer_t): object_t;
+      subSequenceP(arg0: integer_t, arg1: integer_t): Promise<object_t>;
       // public java.lang.String java.lang.String.substring(int,int)
-      substringA(arg0: object_t, arg1: object_t, cb: Callback<string>): void;
-      substring(arg0: object_t, arg1: object_t): string;
-      substringP(arg0: object_t, arg1: object_t): Promise<string>;
+      substringA(arg0: integer_t, arg1: integer_t, cb: Callback<string>): void;
+      substring(arg0: integer_t, arg1: integer_t): string;
+      substringP(arg0: integer_t, arg1: integer_t): Promise<string>;
       // public java.lang.String java.lang.String.substring(int)
-      substringA(arg0: object_t, cb: Callback<string>): void;
-      substring(arg0: object_t): string;
-      substringP(arg0: object_t): Promise<string>;
+      substringA(arg0: integer_t, cb: Callback<string>): void;
+      substring(arg0: integer_t): string;
+      substringP(arg0: integer_t): Promise<string>;
       // public char[] java.lang.String.toCharArray()
       toCharArrayA(cb: Callback<object_t[]>): void;
       toCharArray(): object_t[];
@@ -5776,9 +7170,9 @@ export module Java {
       trim(): string;
       trimP(): Promise<string>;
       // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-      waitA(arg0: object_t, arg1: object_t, cb: Callback<void>): void;
-      wait(arg0: object_t, arg1: object_t): void;
-      waitP(arg0: object_t, arg1: object_t): Promise<void>;
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
       // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
       waitA(arg0: object_t, cb: Callback<void>): void;
       wait(arg0: object_t): void;
@@ -5794,40 +7188,40 @@ export module Java {
         class: Java.Object;
         new (
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
           arg3: object_t
         ): java.lang.String;
         new (
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
           arg3: string_t
         ): java.lang.String;
         new (
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t,
-          arg3: object_t
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t
+        ): java.lang.String;
+        new (
+          arg0: array_t<integer_t>,
+          arg1: integer_t,
+          arg2: integer_t
         ): java.lang.String;
         new (
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t
+          arg1: integer_t,
+          arg2: integer_t
         ): java.lang.String;
         new (
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t
-        ): java.lang.String;
-        new (
-          arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t
+          arg1: integer_t,
+          arg2: integer_t
         ): java.lang.String;
         new (arg0: object_array_t, arg1: object_t): java.lang.String;
         new (arg0: object_array_t, arg1: string_t): java.lang.String;
-        new (arg0: object_array_t, arg1: object_t): java.lang.String;
+        new (arg0: object_array_t, arg1: integer_t): java.lang.String;
         new (arg0: object_t): java.lang.String;
         new (arg0: object_t): java.lang.String;
         new (arg0: string_t): java.lang.String;
@@ -5837,19 +7231,19 @@ export module Java {
         // public static java.lang.String java.lang.String.copyValueOf(char[],int,int)
         copyValueOfA(
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
           cb: Callback<string>
         ): void;
         copyValueOf(
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t
+          arg1: integer_t,
+          arg2: integer_t
         ): string;
         copyValueOfP(
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t
+          arg1: integer_t,
+          arg2: integer_t
         ): Promise<string>;
         // public static java.lang.String java.lang.String.copyValueOf(char[])
         copyValueOfA(arg0: object_array_t, cb: Callback<string>): void;
@@ -5897,15 +7291,15 @@ export module Java {
         // public static java.lang.String java.lang.String.valueOf(char[],int,int)
         valueOfA(
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t,
+          arg1: integer_t,
+          arg2: integer_t,
           cb: Callback<string>
         ): void;
-        valueOf(arg0: object_array_t, arg1: object_t, arg2: object_t): string;
+        valueOf(arg0: object_array_t, arg1: integer_t, arg2: integer_t): string;
         valueOfP(
           arg0: object_array_t,
-          arg1: object_t,
-          arg2: object_t
+          arg1: integer_t,
+          arg2: integer_t
         ): Promise<string>;
         // public static java.lang.String java.lang.String.valueOf(java.lang.Object)
         valueOfA(arg0: object_t, cb: Callback<string>): void;
@@ -5924,9 +7318,9 @@ export module Java {
         valueOf(arg0: object_t): string;
         valueOfP(arg0: object_t): Promise<string>;
         // public static java.lang.String java.lang.String.valueOf(int)
-        valueOfA(arg0: object_t, cb: Callback<string>): void;
-        valueOf(arg0: object_t): string;
-        valueOfP(arg0: object_t): Promise<string>;
+        valueOfA(arg0: integer_t, cb: Callback<string>): void;
+        valueOf(arg0: integer_t): string;
+        valueOfP(arg0: integer_t): Promise<string>;
         // public static java.lang.String java.lang.String.valueOf(float)
         valueOfA(arg0: object_t, cb: Callback<string>): void;
         valueOf(arg0: object_t): string;
@@ -5939,6 +7333,1348 @@ export module Java {
         valueOfA(arg0: object_t, cb: Callback<string>): void;
         valueOf(arg0: object_t): string;
         valueOfP(arg0: object_t): Promise<string>;
+      }
+    }
+  }
+
+  export module java.util {
+    export interface Calendar extends Java.java.lang.Object {
+      // public abstract void java.util.Calendar.add(int,int)
+      addA(arg0: integer_t, arg1: integer_t, cb: Callback<void>): void;
+      add(arg0: integer_t, arg1: integer_t): void;
+      addP(arg0: integer_t, arg1: integer_t): Promise<void>;
+      // public boolean java.util.Calendar.after(java.lang.Object)
+      afterA(arg0: object_t, cb: Callback<object_t>): void;
+      after(arg0: object_t): object_t;
+      afterP(arg0: object_t): Promise<object_t>;
+      // public boolean java.util.Calendar.before(java.lang.Object)
+      beforeA(arg0: object_t, cb: Callback<object_t>): void;
+      before(arg0: object_t): object_t;
+      beforeP(arg0: object_t): Promise<object_t>;
+      // public final void java.util.Calendar.clear(int)
+      clearA(arg0: integer_t, cb: Callback<void>): void;
+      clear(arg0: integer_t): void;
+      clearP(arg0: integer_t): Promise<void>;
+      // public final void java.util.Calendar.clear()
+      clearA(cb: Callback<void>): void;
+      clear(): void;
+      clearP(): Promise<void>;
+      // public java.lang.Object java.util.Calendar.clone()
+      cloneA(cb: Callback<object_t>): void;
+      clone(): object_t;
+      cloneP(): Promise<object_t>;
+      // public int java.util.Calendar.compareTo(java.util.Calendar)
+      compareToA(arg0: Java.Calendar, cb: Callback<number>): void;
+      compareTo(arg0: Java.Calendar): number;
+      compareToP(arg0: Java.Calendar): Promise<number>;
+      // public int java.util.Calendar.compareTo(java.lang.Object)
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public int java.util.Calendar.get(int)
+      getA(arg0: integer_t, cb: Callback<number>): void;
+      get(arg0: integer_t): number;
+      getP(arg0: integer_t): Promise<number>;
+      // public int java.util.Calendar.getActualMaximum(int)
+      getActualMaximumA(arg0: integer_t, cb: Callback<number>): void;
+      getActualMaximum(arg0: integer_t): number;
+      getActualMaximumP(arg0: integer_t): Promise<number>;
+      // public int java.util.Calendar.getActualMinimum(int)
+      getActualMinimumA(arg0: integer_t, cb: Callback<number>): void;
+      getActualMinimum(arg0: integer_t): number;
+      getActualMinimumP(arg0: integer_t): Promise<number>;
+      // public java.lang.String java.util.Calendar.getCalendarType()
+      getCalendarTypeA(cb: Callback<string>): void;
+      getCalendarType(): string;
+      getCalendarTypeP(): Promise<string>;
+      // public final native java.lang.Class<?> java.lang.Object.getClass()
+      getClassA(cb: Callback<object_t>): void;
+      getClass(): object_t;
+      getClassP(): Promise<object_t>;
+      // public java.lang.String java.util.Calendar.getDisplayName(int,int,java.util.Locale)
+      getDisplayNameA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t,
+        cb: Callback<string>
+      ): void;
+      getDisplayName(arg0: integer_t, arg1: integer_t, arg2: object_t): string;
+      getDisplayNameP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): Promise<string>;
+      // public java.util.Map<java.lang.String, java.lang.Integer> java.util.Calendar.getDisplayNames(int,int,java.util.Locale)
+      getDisplayNamesA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t,
+        cb: Callback<object_t>
+      ): void;
+      getDisplayNames(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): object_t;
+      getDisplayNamesP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): Promise<object_t>;
+      // public int java.util.Calendar.getFirstDayOfWeek()
+      getFirstDayOfWeekA(cb: Callback<number>): void;
+      getFirstDayOfWeek(): number;
+      getFirstDayOfWeekP(): Promise<number>;
+      // public abstract int java.util.Calendar.getGreatestMinimum(int)
+      getGreatestMinimumA(arg0: integer_t, cb: Callback<number>): void;
+      getGreatestMinimum(arg0: integer_t): number;
+      getGreatestMinimumP(arg0: integer_t): Promise<number>;
+      // public abstract int java.util.Calendar.getLeastMaximum(int)
+      getLeastMaximumA(arg0: integer_t, cb: Callback<number>): void;
+      getLeastMaximum(arg0: integer_t): number;
+      getLeastMaximumP(arg0: integer_t): Promise<number>;
+      // public abstract int java.util.Calendar.getMaximum(int)
+      getMaximumA(arg0: integer_t, cb: Callback<number>): void;
+      getMaximum(arg0: integer_t): number;
+      getMaximumP(arg0: integer_t): Promise<number>;
+      // public int java.util.Calendar.getMinimalDaysInFirstWeek()
+      getMinimalDaysInFirstWeekA(cb: Callback<number>): void;
+      getMinimalDaysInFirstWeek(): number;
+      getMinimalDaysInFirstWeekP(): Promise<number>;
+      // public abstract int java.util.Calendar.getMinimum(int)
+      getMinimumA(arg0: integer_t, cb: Callback<number>): void;
+      getMinimum(arg0: integer_t): number;
+      getMinimumP(arg0: integer_t): Promise<number>;
+      // public final java.util.Date java.util.Calendar.getTime()
+      getTimeA(cb: Callback<object_t>): void;
+      getTime(): object_t;
+      getTimeP(): Promise<object_t>;
+      // public long java.util.Calendar.getTimeInMillis()
+      getTimeInMillisA(cb: Callback<object_t>): void;
+      getTimeInMillis(): object_t;
+      getTimeInMillisP(): Promise<object_t>;
+      // public java.util.TimeZone java.util.Calendar.getTimeZone()
+      getTimeZoneA(cb: Callback<Java.TimeZone>): void;
+      getTimeZone(): Java.TimeZone;
+      getTimeZoneP(): Promise<Java.TimeZone>;
+      // public int java.util.Calendar.getWeeksInWeekYear()
+      getWeeksInWeekYearA(cb: Callback<number>): void;
+      getWeeksInWeekYear(): number;
+      getWeeksInWeekYearP(): Promise<number>;
+      // public int java.util.Calendar.getWeekYear()
+      getWeekYearA(cb: Callback<number>): void;
+      getWeekYear(): number;
+      getWeekYearP(): Promise<number>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public boolean java.util.Calendar.isLenient()
+      isLenientA(cb: Callback<object_t>): void;
+      isLenient(): object_t;
+      isLenientP(): Promise<object_t>;
+      // public final boolean java.util.Calendar.isSet(int)
+      isSetA(arg0: integer_t, cb: Callback<object_t>): void;
+      isSet(arg0: integer_t): object_t;
+      isSetP(arg0: integer_t): Promise<object_t>;
+      // public boolean java.util.Calendar.isWeekDateSupported()
+      isWeekDateSupportedA(cb: Callback<object_t>): void;
+      isWeekDateSupported(): object_t;
+      isWeekDateSupportedP(): Promise<object_t>;
+      // public final native void java.lang.Object.notify()
+      notifyA(cb: Callback<void>): void;
+      notify(): void;
+      notifyP(): Promise<void>;
+      // public final native void java.lang.Object.notifyAll()
+      notifyAllA(cb: Callback<void>): void;
+      notifyAll(): void;
+      notifyAllP(): Promise<void>;
+      // public abstract void java.util.Calendar.roll(int,boolean)
+      rollA(arg0: integer_t, arg1: object_t, cb: Callback<void>): void;
+      roll(arg0: integer_t, arg1: object_t): void;
+      rollP(arg0: integer_t, arg1: object_t): Promise<void>;
+      // public void java.util.Calendar.roll(int,int)
+      rollA(arg0: integer_t, arg1: integer_t, cb: Callback<void>): void;
+      roll(arg0: integer_t, arg1: integer_t): void;
+      rollP(arg0: integer_t, arg1: integer_t): Promise<void>;
+      // public final void java.util.Calendar.set(int,int,int,int,int,int)
+      setA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t,
+        cb: Callback<void>
+      ): void;
+      set(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t
+      ): void;
+      setP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t
+      ): Promise<void>;
+      // public final void java.util.Calendar.set(int,int,int,int,int)
+      setA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        cb: Callback<void>
+      ): void;
+      set(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t
+      ): void;
+      setP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t
+      ): Promise<void>;
+      // public final void java.util.Calendar.set(int,int,int)
+      setA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        cb: Callback<void>
+      ): void;
+      set(arg0: integer_t, arg1: integer_t, arg2: integer_t): void;
+      setP(arg0: integer_t, arg1: integer_t, arg2: integer_t): Promise<void>;
+      // public void java.util.Calendar.set(int,int)
+      setA(arg0: integer_t, arg1: integer_t, cb: Callback<void>): void;
+      set(arg0: integer_t, arg1: integer_t): void;
+      setP(arg0: integer_t, arg1: integer_t): Promise<void>;
+      // public void java.util.Calendar.setFirstDayOfWeek(int)
+      setFirstDayOfWeekA(arg0: integer_t, cb: Callback<void>): void;
+      setFirstDayOfWeek(arg0: integer_t): void;
+      setFirstDayOfWeekP(arg0: integer_t): Promise<void>;
+      // public void java.util.Calendar.setLenient(boolean)
+      setLenientA(arg0: object_t, cb: Callback<void>): void;
+      setLenient(arg0: object_t): void;
+      setLenientP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setMinimalDaysInFirstWeek(int)
+      setMinimalDaysInFirstWeekA(arg0: integer_t, cb: Callback<void>): void;
+      setMinimalDaysInFirstWeek(arg0: integer_t): void;
+      setMinimalDaysInFirstWeekP(arg0: integer_t): Promise<void>;
+      // public final void java.util.Calendar.setTime(java.util.Date)
+      setTimeA(arg0: object_t, cb: Callback<void>): void;
+      setTime(arg0: object_t): void;
+      setTimeP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setTimeInMillis(long)
+      setTimeInMillisA(arg0: object_t, cb: Callback<void>): void;
+      setTimeInMillis(arg0: object_t): void;
+      setTimeInMillisP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setTimeZone(java.util.TimeZone)
+      setTimeZoneA(arg0: Java.TimeZone, cb: Callback<void>): void;
+      setTimeZone(arg0: Java.TimeZone): void;
+      setTimeZoneP(arg0: Java.TimeZone): Promise<void>;
+      // public void java.util.Calendar.setWeekDate(int,int,int)
+      setWeekDateA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        cb: Callback<void>
+      ): void;
+      setWeekDate(arg0: integer_t, arg1: integer_t, arg2: integer_t): void;
+      setWeekDateP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t
+      ): Promise<void>;
+      // public final java.time.Instant java.util.Calendar.toInstant()
+      toInstantA(cb: Callback<object_t>): void;
+      toInstant(): object_t;
+      toInstantP(): Promise<object_t>;
+      // public java.lang.String java.lang.Object.toString()
+      toStringA(cb: Callback<string>): void;
+      toString(): string;
+      toStringP(): Promise<string>;
+      // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+      waitA(arg0: object_t, cb: Callback<void>): void;
+      wait(arg0: object_t): void;
+      waitP(arg0: object_t): Promise<void>;
+      // public final void java.lang.Object.wait() throws java.lang.InterruptedException
+      waitA(cb: Callback<void>): void;
+      wait(): void;
+      waitP(): Promise<void>;
+    }
+    export module Calendar {
+      export interface Static {
+        ERA: number;
+        YEAR: number;
+        MONTH: number;
+        WEEK_OF_YEAR: number;
+        WEEK_OF_MONTH: number;
+        DATE: number;
+        DAY_OF_MONTH: number;
+        DAY_OF_YEAR: number;
+        DAY_OF_WEEK: number;
+        DAY_OF_WEEK_IN_MONTH: number;
+        AM_PM: number;
+        HOUR: number;
+        HOUR_OF_DAY: number;
+        MINUTE: number;
+        SECOND: number;
+        MILLISECOND: number;
+        ZONE_OFFSET: number;
+        DST_OFFSET: number;
+        FIELD_COUNT: number;
+        SUNDAY: number;
+        MONDAY: number;
+        TUESDAY: number;
+        WEDNESDAY: number;
+        THURSDAY: number;
+        FRIDAY: number;
+        SATURDAY: number;
+        JANUARY: number;
+        FEBRUARY: number;
+        MARCH: number;
+        APRIL: number;
+        MAY: number;
+        JUNE: number;
+        JULY: number;
+        AUGUST: number;
+        SEPTEMBER: number;
+        OCTOBER: number;
+        NOVEMBER: number;
+        DECEMBER: number;
+        UNDECIMBER: number;
+        AM: number;
+        PM: number;
+        ALL_STYLES: number;
+        SHORT: number;
+        LONG: number;
+        NARROW_FORMAT: number;
+        NARROW_STANDALONE: number;
+        SHORT_FORMAT: number;
+        LONG_FORMAT: number;
+        SHORT_STANDALONE: number;
+        LONG_STANDALONE: number;
+        class: Java.Object;
+        // public static java.util.Set<java.lang.String> java.util.Calendar.getAvailableCalendarTypes()
+        getAvailableCalendarTypesA(cb: Callback<object_t>): void;
+        getAvailableCalendarTypes(): object_t;
+        getAvailableCalendarTypesP(): Promise<object_t>;
+        // public static synchronized java.util.Locale[] java.util.Calendar.getAvailableLocales()
+        getAvailableLocalesA(cb: Callback<object_t[]>): void;
+        getAvailableLocales(): object_t[];
+        getAvailableLocalesP(): Promise<object_t[]>;
+        // public static java.util.Calendar java.util.Calendar.getInstance(java.util.TimeZone,java.util.Locale)
+        getInstanceA(
+          arg0: Java.TimeZone,
+          arg1: object_t,
+          cb: Callback<Java.Calendar>
+        ): void;
+        getInstance(arg0: Java.TimeZone, arg1: object_t): Java.Calendar;
+        getInstanceP(
+          arg0: Java.TimeZone,
+          arg1: object_t
+        ): Promise<Java.Calendar>;
+        // public static java.util.Calendar java.util.Calendar.getInstance(java.util.TimeZone)
+        getInstanceA(arg0: Java.TimeZone, cb: Callback<Java.Calendar>): void;
+        getInstance(arg0: Java.TimeZone): Java.Calendar;
+        getInstanceP(arg0: Java.TimeZone): Promise<Java.Calendar>;
+        // public static java.util.Calendar java.util.Calendar.getInstance(java.util.Locale)
+        getInstanceA(arg0: object_t, cb: Callback<Java.Calendar>): void;
+        getInstance(arg0: object_t): Java.Calendar;
+        getInstanceP(arg0: object_t): Promise<Java.Calendar>;
+        // public static java.util.Calendar java.util.Calendar.getInstance()
+        getInstanceA(cb: Callback<Java.Calendar>): void;
+        getInstance(): Java.Calendar;
+        getInstanceP(): Promise<Java.Calendar>;
+      }
+    }
+  }
+
+  export module java.util {
+    export interface GregorianCalendar extends Java.java.util.Calendar {
+      // public abstract void java.util.Calendar.add(int,int)
+      addA(arg0: integer_t, arg1: integer_t, cb: Callback<void>): void;
+      add(arg0: integer_t, arg1: integer_t): void;
+      addP(arg0: integer_t, arg1: integer_t): Promise<void>;
+      // public boolean java.util.Calendar.after(java.lang.Object)
+      afterA(arg0: object_t, cb: Callback<object_t>): void;
+      after(arg0: object_t): object_t;
+      afterP(arg0: object_t): Promise<object_t>;
+      // public boolean java.util.Calendar.before(java.lang.Object)
+      beforeA(arg0: object_t, cb: Callback<object_t>): void;
+      before(arg0: object_t): object_t;
+      beforeP(arg0: object_t): Promise<object_t>;
+      // public final void java.util.Calendar.clear(int)
+      clearA(arg0: integer_t, cb: Callback<void>): void;
+      clear(arg0: integer_t): void;
+      clearP(arg0: integer_t): Promise<void>;
+      // public final void java.util.Calendar.clear()
+      clearA(cb: Callback<void>): void;
+      clear(): void;
+      clearP(): Promise<void>;
+      // public java.lang.Object java.util.Calendar.clone()
+      cloneA(cb: Callback<object_t>): void;
+      clone(): object_t;
+      cloneP(): Promise<object_t>;
+      // public int java.util.Calendar.compareTo(java.util.Calendar)
+      compareToA(arg0: Java.Calendar, cb: Callback<number>): void;
+      compareTo(arg0: Java.Calendar): number;
+      compareToP(arg0: Java.Calendar): Promise<number>;
+      // public int java.util.Calendar.compareTo(java.lang.Object)
+      compareToA(arg0: object_t, cb: Callback<number>): void;
+      compareTo(arg0: object_t): number;
+      compareToP(arg0: object_t): Promise<number>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public int java.util.Calendar.get(int)
+      getA(arg0: integer_t, cb: Callback<number>): void;
+      get(arg0: integer_t): number;
+      getP(arg0: integer_t): Promise<number>;
+      // public int java.util.Calendar.getActualMaximum(int)
+      getActualMaximumA(arg0: integer_t, cb: Callback<number>): void;
+      getActualMaximum(arg0: integer_t): number;
+      getActualMaximumP(arg0: integer_t): Promise<number>;
+      // public int java.util.Calendar.getActualMinimum(int)
+      getActualMinimumA(arg0: integer_t, cb: Callback<number>): void;
+      getActualMinimum(arg0: integer_t): number;
+      getActualMinimumP(arg0: integer_t): Promise<number>;
+      // public java.lang.String java.util.Calendar.getCalendarType()
+      getCalendarTypeA(cb: Callback<string>): void;
+      getCalendarType(): string;
+      getCalendarTypeP(): Promise<string>;
+      // public final native java.lang.Class<?> java.lang.Object.getClass()
+      getClassA(cb: Callback<object_t>): void;
+      getClass(): object_t;
+      getClassP(): Promise<object_t>;
+      // public java.lang.String java.util.Calendar.getDisplayName(int,int,java.util.Locale)
+      getDisplayNameA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t,
+        cb: Callback<string>
+      ): void;
+      getDisplayName(arg0: integer_t, arg1: integer_t, arg2: object_t): string;
+      getDisplayNameP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): Promise<string>;
+      // public java.util.Map<java.lang.String, java.lang.Integer> java.util.Calendar.getDisplayNames(int,int,java.util.Locale)
+      getDisplayNamesA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t,
+        cb: Callback<object_t>
+      ): void;
+      getDisplayNames(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): object_t;
+      getDisplayNamesP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): Promise<object_t>;
+      // public int java.util.Calendar.getFirstDayOfWeek()
+      getFirstDayOfWeekA(cb: Callback<number>): void;
+      getFirstDayOfWeek(): number;
+      getFirstDayOfWeekP(): Promise<number>;
+      // public abstract int java.util.Calendar.getGreatestMinimum(int)
+      getGreatestMinimumA(arg0: integer_t, cb: Callback<number>): void;
+      getGreatestMinimum(arg0: integer_t): number;
+      getGreatestMinimumP(arg0: integer_t): Promise<number>;
+      // public final java.util.Date java.util.GregorianCalendar.getGregorianChange()
+      getGregorianChangeA(cb: Callback<object_t>): void;
+      getGregorianChange(): object_t;
+      getGregorianChangeP(): Promise<object_t>;
+      // public abstract int java.util.Calendar.getLeastMaximum(int)
+      getLeastMaximumA(arg0: integer_t, cb: Callback<number>): void;
+      getLeastMaximum(arg0: integer_t): number;
+      getLeastMaximumP(arg0: integer_t): Promise<number>;
+      // public abstract int java.util.Calendar.getMaximum(int)
+      getMaximumA(arg0: integer_t, cb: Callback<number>): void;
+      getMaximum(arg0: integer_t): number;
+      getMaximumP(arg0: integer_t): Promise<number>;
+      // public int java.util.Calendar.getMinimalDaysInFirstWeek()
+      getMinimalDaysInFirstWeekA(cb: Callback<number>): void;
+      getMinimalDaysInFirstWeek(): number;
+      getMinimalDaysInFirstWeekP(): Promise<number>;
+      // public abstract int java.util.Calendar.getMinimum(int)
+      getMinimumA(arg0: integer_t, cb: Callback<number>): void;
+      getMinimum(arg0: integer_t): number;
+      getMinimumP(arg0: integer_t): Promise<number>;
+      // public final java.util.Date java.util.Calendar.getTime()
+      getTimeA(cb: Callback<object_t>): void;
+      getTime(): object_t;
+      getTimeP(): Promise<object_t>;
+      // public long java.util.Calendar.getTimeInMillis()
+      getTimeInMillisA(cb: Callback<object_t>): void;
+      getTimeInMillis(): object_t;
+      getTimeInMillisP(): Promise<object_t>;
+      // public java.util.TimeZone java.util.Calendar.getTimeZone()
+      getTimeZoneA(cb: Callback<Java.TimeZone>): void;
+      getTimeZone(): Java.TimeZone;
+      getTimeZoneP(): Promise<Java.TimeZone>;
+      // public int java.util.Calendar.getWeeksInWeekYear()
+      getWeeksInWeekYearA(cb: Callback<number>): void;
+      getWeeksInWeekYear(): number;
+      getWeeksInWeekYearP(): Promise<number>;
+      // public int java.util.Calendar.getWeekYear()
+      getWeekYearA(cb: Callback<number>): void;
+      getWeekYear(): number;
+      getWeekYearP(): Promise<number>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public boolean java.util.GregorianCalendar.isLeapYear(int)
+      isLeapYearA(arg0: integer_t, cb: Callback<object_t>): void;
+      isLeapYear(arg0: integer_t): object_t;
+      isLeapYearP(arg0: integer_t): Promise<object_t>;
+      // public boolean java.util.Calendar.isLenient()
+      isLenientA(cb: Callback<object_t>): void;
+      isLenient(): object_t;
+      isLenientP(): Promise<object_t>;
+      // public final boolean java.util.Calendar.isSet(int)
+      isSetA(arg0: integer_t, cb: Callback<object_t>): void;
+      isSet(arg0: integer_t): object_t;
+      isSetP(arg0: integer_t): Promise<object_t>;
+      // public boolean java.util.Calendar.isWeekDateSupported()
+      isWeekDateSupportedA(cb: Callback<object_t>): void;
+      isWeekDateSupported(): object_t;
+      isWeekDateSupportedP(): Promise<object_t>;
+      // public final native void java.lang.Object.notify()
+      notifyA(cb: Callback<void>): void;
+      notify(): void;
+      notifyP(): Promise<void>;
+      // public final native void java.lang.Object.notifyAll()
+      notifyAllA(cb: Callback<void>): void;
+      notifyAll(): void;
+      notifyAllP(): Promise<void>;
+      // public abstract void java.util.Calendar.roll(int,boolean)
+      rollA(arg0: integer_t, arg1: object_t, cb: Callback<void>): void;
+      roll(arg0: integer_t, arg1: object_t): void;
+      rollP(arg0: integer_t, arg1: object_t): Promise<void>;
+      // public void java.util.Calendar.roll(int,int)
+      rollA(arg0: integer_t, arg1: integer_t, cb: Callback<void>): void;
+      roll(arg0: integer_t, arg1: integer_t): void;
+      rollP(arg0: integer_t, arg1: integer_t): Promise<void>;
+      // public final void java.util.Calendar.set(int,int,int,int,int,int)
+      setA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t,
+        cb: Callback<void>
+      ): void;
+      set(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t
+      ): void;
+      setP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t
+      ): Promise<void>;
+      // public final void java.util.Calendar.set(int,int,int,int,int)
+      setA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        cb: Callback<void>
+      ): void;
+      set(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t
+      ): void;
+      setP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t
+      ): Promise<void>;
+      // public final void java.util.Calendar.set(int,int,int)
+      setA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        cb: Callback<void>
+      ): void;
+      set(arg0: integer_t, arg1: integer_t, arg2: integer_t): void;
+      setP(arg0: integer_t, arg1: integer_t, arg2: integer_t): Promise<void>;
+      // public void java.util.Calendar.set(int,int)
+      setA(arg0: integer_t, arg1: integer_t, cb: Callback<void>): void;
+      set(arg0: integer_t, arg1: integer_t): void;
+      setP(arg0: integer_t, arg1: integer_t): Promise<void>;
+      // public void java.util.Calendar.setFirstDayOfWeek(int)
+      setFirstDayOfWeekA(arg0: integer_t, cb: Callback<void>): void;
+      setFirstDayOfWeek(arg0: integer_t): void;
+      setFirstDayOfWeekP(arg0: integer_t): Promise<void>;
+      // public void java.util.GregorianCalendar.setGregorianChange(java.util.Date)
+      setGregorianChangeA(arg0: object_t, cb: Callback<void>): void;
+      setGregorianChange(arg0: object_t): void;
+      setGregorianChangeP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setLenient(boolean)
+      setLenientA(arg0: object_t, cb: Callback<void>): void;
+      setLenient(arg0: object_t): void;
+      setLenientP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setMinimalDaysInFirstWeek(int)
+      setMinimalDaysInFirstWeekA(arg0: integer_t, cb: Callback<void>): void;
+      setMinimalDaysInFirstWeek(arg0: integer_t): void;
+      setMinimalDaysInFirstWeekP(arg0: integer_t): Promise<void>;
+      // public final void java.util.Calendar.setTime(java.util.Date)
+      setTimeA(arg0: object_t, cb: Callback<void>): void;
+      setTime(arg0: object_t): void;
+      setTimeP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setTimeInMillis(long)
+      setTimeInMillisA(arg0: object_t, cb: Callback<void>): void;
+      setTimeInMillis(arg0: object_t): void;
+      setTimeInMillisP(arg0: object_t): Promise<void>;
+      // public void java.util.Calendar.setTimeZone(java.util.TimeZone)
+      setTimeZoneA(arg0: Java.TimeZone, cb: Callback<void>): void;
+      setTimeZone(arg0: Java.TimeZone): void;
+      setTimeZoneP(arg0: Java.TimeZone): Promise<void>;
+      // public void java.util.Calendar.setWeekDate(int,int,int)
+      setWeekDateA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        cb: Callback<void>
+      ): void;
+      setWeekDate(arg0: integer_t, arg1: integer_t, arg2: integer_t): void;
+      setWeekDateP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t
+      ): Promise<void>;
+      // public final java.time.Instant java.util.Calendar.toInstant()
+      toInstantA(cb: Callback<object_t>): void;
+      toInstant(): object_t;
+      toInstantP(): Promise<object_t>;
+      // public java.lang.String java.lang.Object.toString()
+      toStringA(cb: Callback<string>): void;
+      toString(): string;
+      toStringP(): Promise<string>;
+      // public java.time.ZonedDateTime java.util.GregorianCalendar.toZonedDateTime()
+      toZonedDateTimeA(cb: Callback<object_t>): void;
+      toZonedDateTime(): object_t;
+      toZonedDateTimeP(): Promise<object_t>;
+      // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+      waitA(arg0: object_t, cb: Callback<void>): void;
+      wait(arg0: object_t): void;
+      waitP(arg0: object_t): Promise<void>;
+      // public final void java.lang.Object.wait() throws java.lang.InterruptedException
+      waitA(cb: Callback<void>): void;
+      wait(): void;
+      waitP(): Promise<void>;
+    }
+    export module GregorianCalendar {
+      export interface Static {
+        BC: number;
+        AD: number;
+        ERA: number;
+        YEAR: number;
+        MONTH: number;
+        WEEK_OF_YEAR: number;
+        WEEK_OF_MONTH: number;
+        DATE: number;
+        DAY_OF_MONTH: number;
+        DAY_OF_YEAR: number;
+        DAY_OF_WEEK: number;
+        DAY_OF_WEEK_IN_MONTH: number;
+        AM_PM: number;
+        HOUR: number;
+        HOUR_OF_DAY: number;
+        MINUTE: number;
+        SECOND: number;
+        MILLISECOND: number;
+        ZONE_OFFSET: number;
+        DST_OFFSET: number;
+        FIELD_COUNT: number;
+        SUNDAY: number;
+        MONDAY: number;
+        TUESDAY: number;
+        WEDNESDAY: number;
+        THURSDAY: number;
+        FRIDAY: number;
+        SATURDAY: number;
+        JANUARY: number;
+        FEBRUARY: number;
+        MARCH: number;
+        APRIL: number;
+        MAY: number;
+        JUNE: number;
+        JULY: number;
+        AUGUST: number;
+        SEPTEMBER: number;
+        OCTOBER: number;
+        NOVEMBER: number;
+        DECEMBER: number;
+        UNDECIMBER: number;
+        AM: number;
+        PM: number;
+        ALL_STYLES: number;
+        SHORT: number;
+        LONG: number;
+        NARROW_FORMAT: number;
+        NARROW_STANDALONE: number;
+        SHORT_FORMAT: number;
+        LONG_FORMAT: number;
+        SHORT_STANDALONE: number;
+        LONG_STANDALONE: number;
+        class: Java.Object;
+        new (
+          arg0: integer_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t,
+          arg4: integer_t,
+          arg5: integer_t
+        ): java.util.GregorianCalendar;
+        new (
+          arg0: integer_t,
+          arg1: integer_t,
+          arg2: integer_t,
+          arg3: integer_t,
+          arg4: integer_t
+        ): java.util.GregorianCalendar;
+        new (
+          arg0: integer_t,
+          arg1: integer_t,
+          arg2: integer_t
+        ): java.util.GregorianCalendar;
+        new (arg0: Java.TimeZone, arg1: object_t): java.util.GregorianCalendar;
+        new (arg0: Java.TimeZone): java.util.GregorianCalendar;
+        new (arg0: object_t): java.util.GregorianCalendar;
+        new (): java.util.GregorianCalendar;
+        // public static java.util.GregorianCalendar java.util.GregorianCalendar.from(java.time.ZonedDateTime)
+        fromA(arg0: object_t, cb: Callback<Java.GregorianCalendar>): void;
+        from(arg0: object_t): Java.GregorianCalendar;
+        fromP(arg0: object_t): Promise<Java.GregorianCalendar>;
+        // public static java.util.Set<java.lang.String> java.util.Calendar.getAvailableCalendarTypes()
+        getAvailableCalendarTypesA(cb: Callback<object_t>): void;
+        getAvailableCalendarTypes(): object_t;
+        getAvailableCalendarTypesP(): Promise<object_t>;
+        // public static synchronized java.util.Locale[] java.util.Calendar.getAvailableLocales()
+        getAvailableLocalesA(cb: Callback<object_t[]>): void;
+        getAvailableLocales(): object_t[];
+        getAvailableLocalesP(): Promise<object_t[]>;
+        // public static java.util.Calendar java.util.Calendar.getInstance(java.util.TimeZone,java.util.Locale)
+        getInstanceA(
+          arg0: Java.TimeZone,
+          arg1: object_t,
+          cb: Callback<Java.Calendar>
+        ): void;
+        getInstance(arg0: Java.TimeZone, arg1: object_t): Java.Calendar;
+        getInstanceP(
+          arg0: Java.TimeZone,
+          arg1: object_t
+        ): Promise<Java.Calendar>;
+        // public static java.util.Calendar java.util.Calendar.getInstance(java.util.TimeZone)
+        getInstanceA(arg0: Java.TimeZone, cb: Callback<Java.Calendar>): void;
+        getInstance(arg0: Java.TimeZone): Java.Calendar;
+        getInstanceP(arg0: Java.TimeZone): Promise<Java.Calendar>;
+        // public static java.util.Calendar java.util.Calendar.getInstance(java.util.Locale)
+        getInstanceA(arg0: object_t, cb: Callback<Java.Calendar>): void;
+        getInstance(arg0: object_t): Java.Calendar;
+        getInstanceP(arg0: object_t): Promise<Java.Calendar>;
+        // public static java.util.Calendar java.util.Calendar.getInstance()
+        getInstanceA(cb: Callback<Java.Calendar>): void;
+        getInstance(): Java.Calendar;
+        getInstanceP(): Promise<Java.Calendar>;
+      }
+    }
+  }
+
+  export module java.util {
+    export interface List extends Java.java.lang.Object {
+      // public abstract void java.util.List.add(int,E)
+      addA(arg0: integer_t, arg1: object_t, cb: Callback<void>): void;
+      add(arg0: integer_t, arg1: object_t): void;
+      addP(arg0: integer_t, arg1: object_t): Promise<void>;
+      // public abstract boolean java.util.List.add(E)
+      addA(arg0: object_t, cb: Callback<object_t>): void;
+      add(arg0: object_t): object_t;
+      addP(arg0: object_t): Promise<object_t>;
+      // public abstract boolean java.util.List.addAll(int,java.util.Collection<? extends E>)
+      addAllA(arg0: integer_t, arg1: object_t, cb: Callback<object_t>): void;
+      addAll(arg0: integer_t, arg1: object_t): object_t;
+      addAllP(arg0: integer_t, arg1: object_t): Promise<object_t>;
+      // public abstract boolean java.util.List.addAll(java.util.Collection<? extends E>)
+      addAllA(arg0: object_t, cb: Callback<object_t>): void;
+      addAll(arg0: object_t): object_t;
+      addAllP(arg0: object_t): Promise<object_t>;
+      // public abstract void java.util.List.clear()
+      clearA(cb: Callback<void>): void;
+      clear(): void;
+      clearP(): Promise<void>;
+      // public abstract boolean java.util.List.contains(java.lang.Object)
+      containsA(arg0: object_t, cb: Callback<object_t>): void;
+      contains(arg0: object_t): object_t;
+      containsP(arg0: object_t): Promise<object_t>;
+      // public abstract boolean java.util.List.containsAll(java.util.Collection<?>)
+      containsAllA(arg0: object_t, cb: Callback<object_t>): void;
+      containsAll(arg0: object_t): object_t;
+      containsAllP(arg0: object_t): Promise<object_t>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public default void java.lang.Iterable.forEach(java.util.function.Consumer<? super T>)
+      forEachA(arg0: object_t, cb: Callback<void>): void;
+      forEach(arg0: object_t): void;
+      forEachP(arg0: object_t): Promise<void>;
+      // public abstract E java.util.List.get(int)
+      getA(arg0: integer_t, cb: Callback<object_t>): void;
+      get(arg0: integer_t): object_t;
+      getP(arg0: integer_t): Promise<object_t>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public abstract int java.util.List.indexOf(java.lang.Object)
+      indexOfA(arg0: object_t, cb: Callback<number>): void;
+      indexOf(arg0: object_t): number;
+      indexOfP(arg0: object_t): Promise<number>;
+      // public abstract boolean java.util.List.isEmpty()
+      isEmptyA(cb: Callback<object_t>): void;
+      isEmpty(): object_t;
+      isEmptyP(): Promise<object_t>;
+      // public abstract java.util.Iterator<E> java.util.List.iterator()
+      iteratorA(cb: Callback<object_t>): void;
+      iterator(): object_t;
+      iteratorP(): Promise<object_t>;
+      // public abstract int java.util.List.lastIndexOf(java.lang.Object)
+      lastIndexOfA(arg0: object_t, cb: Callback<number>): void;
+      lastIndexOf(arg0: object_t): number;
+      lastIndexOfP(arg0: object_t): Promise<number>;
+      // public abstract java.util.ListIterator<E> java.util.List.listIterator(int)
+      listIteratorA(arg0: integer_t, cb: Callback<object_t>): void;
+      listIterator(arg0: integer_t): object_t;
+      listIteratorP(arg0: integer_t): Promise<object_t>;
+      // public abstract java.util.ListIterator<E> java.util.List.listIterator()
+      listIteratorA(cb: Callback<object_t>): void;
+      listIterator(): object_t;
+      listIteratorP(): Promise<object_t>;
+      // public default java.util.stream.Stream<E> java.util.Collection.parallelStream()
+      parallelStreamA(cb: Callback<object_t>): void;
+      parallelStream(): object_t;
+      parallelStreamP(): Promise<object_t>;
+      // public abstract boolean java.util.List.remove(java.lang.Object)
+      removeA(arg0: object_t, cb: Callback<object_t>): void;
+      remove(arg0: object_t): object_t;
+      removeP(arg0: object_t): Promise<object_t>;
+      // public abstract E java.util.List.remove(int)
+      removeA(arg0: integer_t, cb: Callback<object_t>): void;
+      remove(arg0: integer_t): object_t;
+      removeP(arg0: integer_t): Promise<object_t>;
+      // public abstract boolean java.util.List.removeAll(java.util.Collection<?>)
+      removeAllA(arg0: object_t, cb: Callback<object_t>): void;
+      removeAll(arg0: object_t): object_t;
+      removeAllP(arg0: object_t): Promise<object_t>;
+      // public default boolean java.util.Collection.removeIf(java.util.function.Predicate<? super E>)
+      removeIfA(arg0: object_t, cb: Callback<object_t>): void;
+      removeIf(arg0: object_t): object_t;
+      removeIfP(arg0: object_t): Promise<object_t>;
+      // public default void java.util.List.replaceAll(java.util.function.UnaryOperator<E>)
+      replaceAllA(arg0: object_t, cb: Callback<void>): void;
+      replaceAll(arg0: object_t): void;
+      replaceAllP(arg0: object_t): Promise<void>;
+      // public abstract boolean java.util.List.retainAll(java.util.Collection<?>)
+      retainAllA(arg0: object_t, cb: Callback<object_t>): void;
+      retainAll(arg0: object_t): object_t;
+      retainAllP(arg0: object_t): Promise<object_t>;
+      // public abstract E java.util.List.set(int,E)
+      setA(arg0: integer_t, arg1: object_t, cb: Callback<object_t>): void;
+      set(arg0: integer_t, arg1: object_t): object_t;
+      setP(arg0: integer_t, arg1: object_t): Promise<object_t>;
+      // public abstract int java.util.List.size()
+      sizeA(cb: Callback<number>): void;
+      size(): number;
+      sizeP(): Promise<number>;
+      // public default void java.util.List.sort(java.util.Comparator<? super E>)
+      sortA(arg0: object_t, cb: Callback<void>): void;
+      sort(arg0: object_t): void;
+      sortP(arg0: object_t): Promise<void>;
+      // public default java.util.Spliterator<E> java.util.List.spliterator()
+      spliteratorA(cb: Callback<object_t>): void;
+      spliterator(): object_t;
+      spliteratorP(): Promise<object_t>;
+      // public default java.util.stream.Stream<E> java.util.Collection.stream()
+      streamA(cb: Callback<object_t>): void;
+      stream(): object_t;
+      streamP(): Promise<object_t>;
+      // public abstract java.util.List<E> java.util.List.subList(int,int)
+      subListA(arg0: integer_t, arg1: integer_t, cb: Callback<Java.List>): void;
+      subList(arg0: integer_t, arg1: integer_t): Java.List;
+      subListP(arg0: integer_t, arg1: integer_t): Promise<Java.List>;
+      // public default <T> T[] java.util.Collection.toArray(java.util.function.IntFunction<T[]>)
+      toArrayA(arg0: object_t, cb: Callback<object_t[]>): void;
+      toArray(arg0: object_t): object_t[];
+      toArrayP(arg0: object_t): Promise<object_t[]>;
+      // public abstract <T> T[] java.util.List.toArray(T[])
+      toArrayA(arg0: object_array_t, cb: Callback<object_t[]>): void;
+      toArray(arg0: object_array_t): object_t[];
+      toArrayP(arg0: object_array_t): Promise<object_t[]>;
+      // public abstract java.lang.Object[] java.util.List.toArray()
+      toArrayA(cb: Callback<object_t[]>): void;
+      toArray(): object_t[];
+      toArrayP(): Promise<object_t[]>;
+    }
+    export module List {
+      export interface Static {
+        class: Java.Object;
+        // public static <E> java.util.List<E> java.util.List.copyOf(java.util.Collection<? extends E>)
+        copyOfA(arg0: object_t, cb: Callback<Java.List>): void;
+        copyOf(arg0: object_t): Java.List;
+        copyOfP(arg0: object_t): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E,E,E,E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          arg8: object_t,
+          arg9: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          arg8: object_t,
+          arg9: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          arg8: object_t,
+          arg9: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E,E,E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          arg8: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          arg8: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          arg8: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E,E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          arg7: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          arg6: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          arg5: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          arg4: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t
+        ): Java.List;
+        ofP(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          arg3: object_t
+        ): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E,E)
+        ofA(
+          arg0: object_t,
+          arg1: object_t,
+          arg2: object_t,
+          cb: Callback<Java.List>
+        ): void;
+        of(arg0: object_t, arg1: object_t, arg2: object_t): Java.List;
+        ofP(arg0: object_t, arg1: object_t, arg2: object_t): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E,E)
+        ofA(arg0: object_t, arg1: object_t, cb: Callback<Java.List>): void;
+        of(arg0: object_t, arg1: object_t): Java.List;
+        ofP(arg0: object_t, arg1: object_t): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E...)
+        ofA(arg0: object_array_t, cb: Callback<Java.List>): void;
+        of(...arg0: object_t[]): Java.List;
+        of(arg0: object_array_t): Java.List;
+        ofP(...arg0: object_t[]): Promise<Java.List>;
+        ofP(arg0: object_array_t): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of(E)
+        ofA(arg0: object_t, cb: Callback<Java.List>): void;
+        of(arg0: object_t): Java.List;
+        ofP(arg0: object_t): Promise<Java.List>;
+        // public static <E> java.util.List<E> java.util.List.of()
+        ofA(cb: Callback<Java.List>): void;
+        of(): Java.List;
+        ofP(): Promise<Java.List>;
+      }
+    }
+  }
+
+  export module java.util {
+    export interface TimeZone extends Java.java.lang.Object {
+      // public java.lang.Object java.util.TimeZone.clone()
+      cloneA(cb: Callback<object_t>): void;
+      clone(): object_t;
+      cloneP(): Promise<object_t>;
+      // public boolean java.lang.Object.equals(java.lang.Object)
+      equalsA(arg0: object_t, cb: Callback<object_t>): void;
+      equals(arg0: object_t): object_t;
+      equalsP(arg0: object_t): Promise<object_t>;
+      // public final native java.lang.Class<?> java.lang.Object.getClass()
+      getClassA(cb: Callback<object_t>): void;
+      getClass(): object_t;
+      getClassP(): Promise<object_t>;
+      // public java.lang.String java.util.TimeZone.getDisplayName(boolean,int,java.util.Locale)
+      getDisplayNameA(
+        arg0: object_t,
+        arg1: integer_t,
+        arg2: object_t,
+        cb: Callback<string>
+      ): void;
+      getDisplayName(arg0: object_t, arg1: integer_t, arg2: object_t): string;
+      getDisplayNameP(
+        arg0: object_t,
+        arg1: integer_t,
+        arg2: object_t
+      ): Promise<string>;
+      // public final java.lang.String java.util.TimeZone.getDisplayName(boolean,int)
+      getDisplayNameA(
+        arg0: object_t,
+        arg1: integer_t,
+        cb: Callback<string>
+      ): void;
+      getDisplayName(arg0: object_t, arg1: integer_t): string;
+      getDisplayNameP(arg0: object_t, arg1: integer_t): Promise<string>;
+      // public final java.lang.String java.util.TimeZone.getDisplayName(java.util.Locale)
+      getDisplayNameA(arg0: object_t, cb: Callback<string>): void;
+      getDisplayName(arg0: object_t): string;
+      getDisplayNameP(arg0: object_t): Promise<string>;
+      // public final java.lang.String java.util.TimeZone.getDisplayName()
+      getDisplayNameA(cb: Callback<string>): void;
+      getDisplayName(): string;
+      getDisplayNameP(): Promise<string>;
+      // public int java.util.TimeZone.getDSTSavings()
+      getDSTSavingsA(cb: Callback<number>): void;
+      getDSTSavings(): number;
+      getDSTSavingsP(): Promise<number>;
+      // public java.lang.String java.util.TimeZone.getID()
+      getIDA(cb: Callback<string>): void;
+      getID(): string;
+      getIDP(): Promise<string>;
+      // public abstract int java.util.TimeZone.getOffset(int,int,int,int,int,int)
+      getOffsetA(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t,
+        cb: Callback<number>
+      ): void;
+      getOffset(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t
+      ): number;
+      getOffsetP(
+        arg0: integer_t,
+        arg1: integer_t,
+        arg2: integer_t,
+        arg3: integer_t,
+        arg4: integer_t,
+        arg5: integer_t
+      ): Promise<number>;
+      // public int java.util.TimeZone.getOffset(long)
+      getOffsetA(arg0: object_t, cb: Callback<number>): void;
+      getOffset(arg0: object_t): number;
+      getOffsetP(arg0: object_t): Promise<number>;
+      // public abstract int java.util.TimeZone.getRawOffset()
+      getRawOffsetA(cb: Callback<number>): void;
+      getRawOffset(): number;
+      getRawOffsetP(): Promise<number>;
+      // public native int java.lang.Object.hashCode()
+      hashCodeA(cb: Callback<number>): void;
+      hashCode(): number;
+      hashCodeP(): Promise<number>;
+      // public boolean java.util.TimeZone.hasSameRules(java.util.TimeZone)
+      hasSameRulesA(arg0: Java.TimeZone, cb: Callback<object_t>): void;
+      hasSameRules(arg0: Java.TimeZone): object_t;
+      hasSameRulesP(arg0: Java.TimeZone): Promise<object_t>;
+      // public abstract boolean java.util.TimeZone.inDaylightTime(java.util.Date)
+      inDaylightTimeA(arg0: object_t, cb: Callback<object_t>): void;
+      inDaylightTime(arg0: object_t): object_t;
+      inDaylightTimeP(arg0: object_t): Promise<object_t>;
+      // public final native void java.lang.Object.notify()
+      notifyA(cb: Callback<void>): void;
+      notify(): void;
+      notifyP(): Promise<void>;
+      // public final native void java.lang.Object.notifyAll()
+      notifyAllA(cb: Callback<void>): void;
+      notifyAll(): void;
+      notifyAllP(): Promise<void>;
+      // public boolean java.util.TimeZone.observesDaylightTime()
+      observesDaylightTimeA(cb: Callback<object_t>): void;
+      observesDaylightTime(): object_t;
+      observesDaylightTimeP(): Promise<object_t>;
+      // public void java.util.TimeZone.setID(java.lang.String)
+      setIDA(arg0: string_t, cb: Callback<void>): void;
+      setID(arg0: string_t): void;
+      setIDP(arg0: string_t): Promise<void>;
+      // public abstract void java.util.TimeZone.setRawOffset(int)
+      setRawOffsetA(arg0: integer_t, cb: Callback<void>): void;
+      setRawOffset(arg0: integer_t): void;
+      setRawOffsetP(arg0: integer_t): Promise<void>;
+      // public java.lang.String java.lang.Object.toString()
+      toStringA(cb: Callback<string>): void;
+      toString(): string;
+      toStringP(): Promise<string>;
+      // public java.time.ZoneId java.util.TimeZone.toZoneId()
+      toZoneIdA(cb: Callback<object_t>): void;
+      toZoneId(): object_t;
+      toZoneIdP(): Promise<object_t>;
+      // public abstract boolean java.util.TimeZone.useDaylightTime()
+      useDaylightTimeA(cb: Callback<object_t>): void;
+      useDaylightTime(): object_t;
+      useDaylightTimeP(): Promise<object_t>;
+      // public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+      waitA(arg0: object_t, arg1: integer_t, cb: Callback<void>): void;
+      wait(arg0: object_t, arg1: integer_t): void;
+      waitP(arg0: object_t, arg1: integer_t): Promise<void>;
+      // public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+      waitA(arg0: object_t, cb: Callback<void>): void;
+      wait(arg0: object_t): void;
+      waitP(arg0: object_t): Promise<void>;
+      // public final void java.lang.Object.wait() throws java.lang.InterruptedException
+      waitA(cb: Callback<void>): void;
+      wait(): void;
+      waitP(): Promise<void>;
+    }
+    export module TimeZone {
+      export interface Static {
+        SHORT: number;
+        LONG: number;
+        class: Java.Object;
+        new (): java.util.TimeZone;
+        // public static synchronized java.lang.String[] java.util.TimeZone.getAvailableIDs(int)
+        getAvailableIDsA(arg0: integer_t, cb: Callback<string[]>): void;
+        getAvailableIDs(arg0: integer_t): string[];
+        getAvailableIDsP(arg0: integer_t): Promise<string[]>;
+        // public static synchronized java.lang.String[] java.util.TimeZone.getAvailableIDs()
+        getAvailableIDsA(cb: Callback<string[]>): void;
+        getAvailableIDs(): string[];
+        getAvailableIDsP(): Promise<string[]>;
+        // public static java.util.TimeZone java.util.TimeZone.getDefault()
+        getDefaultA(cb: Callback<Java.TimeZone>): void;
+        getDefault(): Java.TimeZone;
+        getDefaultP(): Promise<Java.TimeZone>;
+        // public static java.util.TimeZone java.util.TimeZone.getTimeZone(java.time.ZoneId)
+        getTimeZoneA(arg0: object_t, cb: Callback<Java.TimeZone>): void;
+        getTimeZone(arg0: object_t): Java.TimeZone;
+        getTimeZoneP(arg0: object_t): Promise<Java.TimeZone>;
+        // public static synchronized java.util.TimeZone java.util.TimeZone.getTimeZone(java.lang.String)
+        getTimeZoneA(arg0: string_t, cb: Callback<Java.TimeZone>): void;
+        getTimeZone(arg0: string_t): Java.TimeZone;
+        getTimeZoneP(arg0: string_t): Promise<Java.TimeZone>;
+        // public static void java.util.TimeZone.setDefault(java.util.TimeZone)
+        setDefaultA(arg0: Java.TimeZone, cb: Callback<void>): void;
+        setDefault(arg0: Java.TimeZone): void;
+        setDefaultP(arg0: Java.TimeZone): Promise<void>;
       }
     }
   }
