@@ -10,7 +10,48 @@ It can read and write vCards in many different formats. The "ez" stands for "eas
    - Windows: [download][jdk-download] and [install][jdk-install-docs]
 1. Install `g++` on Ubuntu: `sudo apt install g++` (to build node-java dependency)
 1. Install ez-vcard (this package)
-   `npm i https://github.com/Maxim-Mazurok/ez-vcard`
+   ```sh
+   npm i ez-vcard
+   ```
+
+### Usage in NodeJS
+
+```js
+const ezVcard = require('ez-vcard').default;
+(async () => {
+  const vcard = await ezVcard({name: {first: 'Maxim'}});
+  console.log(vcard);
+})();
+```
+
+### Usage in TypeScript
+
+```sh
+npm install @types/node typescript
+```
+
+_src/vcard.ts_
+
+```ts
+import ezVcard from 'ez-vcard';
+
+(async () => {
+  const vcard = await ezVcard({name: {first: 'Maxim'}});
+  console.log(vcard);
+})();
+```
+
+_tsconfig.json_
+
+```json
+{
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
+}
+```
+
+and run: `npx ts-node src/vcard.ts` or compile: `npx tsc --outDir dist`.
 
 ## Features
 

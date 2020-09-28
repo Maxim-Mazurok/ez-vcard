@@ -44,19 +44,24 @@ _java.asyncOptions = {
 
 const mvnInit = async () =>
   new Promise((resolve, reject) => {
-    mvn({
-      packageJsonPath: path.resolve(path.join('..', 'package.json'))
-    },(err, mvnResults) => {
-      if (err) {
-        console.error('could not resolve maven dependencies', err);
-        reject(err);
-      }
+    mvn(
+      {
+        packageJsonPath: path.resolve(
+          path.join(__dirname, '..', 'package.json')
+        ),
+      },
+      (err, mvnResults) => {
+        if (err) {
+          console.error('could not resolve maven dependencies', err);
+          reject(err);
+        }
 
-      mvnResults.classpath.forEach(c => {
-        _java.classpath.push(c);
-      });
-      resolve();
-    });
+        mvnResults.classpath.forEach(c => {
+          _java.classpath.push(c);
+        });
+        resolve();
+      }
+    );
   });
 
 const beforeJvm = async () => {
