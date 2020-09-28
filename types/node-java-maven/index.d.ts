@@ -61,14 +61,14 @@ declare module 'node-java-maven' {
 
   function DefaultFunction(callback: callback): void;
   function DefaultFunction(
-    options: {
+    options: Partial<{
       packageJsonPath: string;
       repositories: Array<{id: string; url: string}>;
       localRepository: string;
       concurrency: number;
       debug: boolean;
       [key: string]: unknown;
-    },
+    }>,
     callback: callback
   ): void;
   export = DefaultFunction;

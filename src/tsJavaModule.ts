@@ -33,6 +33,7 @@
 import _java from 'java';
 import _ from 'lodash';
 import mvn from 'node-java-maven';
+import path from 'path';
 
 _java.asyncOptions = {
   syncSuffix: '',
@@ -43,7 +44,9 @@ _java.asyncOptions = {
 
 const mvnInit = async () =>
   new Promise((resolve, reject) => {
-    mvn((err, mvnResults) => {
+    mvn({
+      packageJsonPath: path.resolve(path.join('..', 'package.json'))
+    },(err, mvnResults) => {
       if (err) {
         console.error('could not resolve maven dependencies', err);
         reject(err);
