@@ -2,7 +2,8 @@
 
 1. `git clone https://github.com/Maxim-Mazurok/ez-vcard` - clone this repo
 1. `cd ez-vcard` - go to the root repo folder
-1. `npx ts-node -P example/tsconfig.json example/usage.ts` - run [`usage.ts`](usage.ts) file
+1. `npm ci` - install dependencies
+1. `npx ts-node -P example/tsconfig.json example/index.ts` - run [`index.ts`](index.ts) file
 1. You should see something like this in terminal:
     ```
     BEGIN:VCARD
