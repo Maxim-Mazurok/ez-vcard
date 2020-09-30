@@ -53,6 +53,8 @@ _tsconfig.json_
 
 and run: `npx ts-node src/vcard.ts` or compile: `npx tsc --outDir dist`.
 
+**Note:** the first run might take a while, because it downloads maven packages required for package to run. Subsequent runs will be much faster than the first one.
+
 ## Features
 
 - Status: **It works!**
