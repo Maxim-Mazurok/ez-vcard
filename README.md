@@ -8,7 +8,7 @@ It can read and write vCards in many different formats. The "ez" stands for "eas
 1. Install JDK
    - Ubuntu / WSL: `sudo apt install default-jdk`
    - Windows: [download][jdk-download] and [install][jdk-install-docs]
-1. Install `g++` on Ubuntu: `sudo apt install g++` (to build node-java dependency)
+1. Install `make` and `g++` on Ubuntu: `sudo apt install build-essential` (to build node-java dependency)
 1. Install ez-vcard (this package)
    ```sh
    npm i ez-vcard
