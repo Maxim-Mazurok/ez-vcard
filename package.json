@@ -1,6 +1,6 @@
 {
   "name": "ez-vcard",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A vCard parser library for NodeJS with TypeScript support",
   "keywords": [
     "vCard",
@@ -9,6 +9,7 @@
     "TypeScript",
     "ez-vcard"
   ],
+  "homepage": "https://github.com/Maxim-Mazurok/ez-vcard",
   "license": "MIT",
   "author": "Maxim Mazurok <maxim@mazurok.com>",
   "main": "dist/index.js",
