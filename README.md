@@ -1,5 +1,7 @@
 # ez-vcard
 
+[![npm](https://img.shields.io/npm/v/ez-vcard)](https://www.npmjs.com/package/ez-vcard)
+
 It is a vCard generator written in TypeScript for NodeJS that uses amazing [ez-vcard library written in Java][ez-vcard].
 It can read and write vCards in many different formats. The "ez" stands for "easy" because the goal is to create a library that's easy to use.
 
