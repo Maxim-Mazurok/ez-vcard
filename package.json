@@ -1,6 +1,6 @@
 {
   "name": "ez-vcard",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A vCard parser library for NodeJS with TypeScript support",
   "keywords": [
     "vCard",
@@ -22,7 +22,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "java": "^0.12.1",
+    "java": "0.12.1",
     "lodash": "^4.17.20",
     "node-java-maven": "^0.1.2"
   },

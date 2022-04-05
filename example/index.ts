@@ -71,4 +71,6 @@ import ezVcard, {Config, VcardData} from '../src/index';
   const vcard = await ezVcard(data, config);
 
   console.log(vcard);
+
+  process.exit(0); // in case if you're using java@0.12.2 and process hangs, see https://github.com/joeferner/node-java/issues/505
 })();
